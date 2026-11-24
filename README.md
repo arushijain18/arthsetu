@@ -90,3 +90,4 @@ Category **#3 "Irregular income"** on the categories page opens the self-plannin
 ## Fraud Labs integration
 
 Category **#6 "Fraud lab"** opens the Fraud Labs learning experience inside the ArthSetu application shell (with an in-app **← All categories** control). Its HTML, CSS, JavaScript, bilingual content and image assets are served from `client/public/fraud-labs/`; Vite copies these files to `client/dist/fraud-labs/` during a production build. It is an embedded module, not a separately launched website.
+deployed on render https://arthsetu-7d9e.onrender.com.
