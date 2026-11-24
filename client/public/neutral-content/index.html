@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f4efe4">
+<title>Arth Setu — Neutral Content</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Hind:wght@400;500;600;700&family=Tiro+Devanagari+Hindi&display=swap');
+:root{--paper:#f5f0e6;--card:#fffdf8;--ink:#26365f;--muted:#6d6a61;--line:#e5dccb;--sage:#e8eee5;--blue:#e9eff5;--sand:#f4ead5;--rose:#f3e8e8;--accent:#a85b67;--shadow:0 8px 24px rgba(55,45,29,.07)}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:#34332f;font-family:'Hind',sans-serif;font-size:18px;line-height:1.55}
+button,input{font:inherit}button{cursor:pointer}.shell{max-width:1080px;margin:auto;padding:22px}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}.brand{display:flex;align-items:center;gap:10px;color:var(--ink);font-family:'Cormorant Garamond',serif;font-weight:700;font-size:25px}.mark{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#e7dfcd;color:var(--ink);font-size:20px}
+.pill{border:1px solid var(--line);background:#fffdf8;border-radius:999px;padding:8px 15px;color:var(--ink);font-weight:600}
+.cover{position:relative;overflow:hidden;border-radius:24px;background:linear-gradient(120deg,#e9e2d2,#f8f4eb 65%,#e4ece7);padding:clamp(28px,6vw,68px);box-shadow:var(--shadow);min-height:410px;display:flex;flex-direction:column;justify-content:center}
+.cover:after{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(38,54,95,.13);border-radius:50%;right:-80px;top:-90px;box-shadow:0 0 0 28px rgba(255,255,255,.12),0 0 0 58px rgba(255,255,255,.1)}
+.eyebrow{letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-size:13px;font-weight:700}.cover h1{font-family:'Cormorant Garamond','Tiro Devanagari Hindi',serif;color:var(--ink);font-size:clamp(42px,7vw,76px);line-height:1.02;margin:12px 0}.cover p{font-size:21px;max-width:620px;color:#625c51;margin:8px 0 24px}.facts{display:flex;flex-wrap:wrap;gap:10px;margin:4px 0 26px}.fact{background:rgba(255,253,248,.78);border:1px solid rgba(210,199,180,.8);border-radius:999px;padding:7px 14px;font-size:15px;color:#4e4b44}.primary{background:var(--ink);color:white;border:0;border-radius:12px;padding:13px 24px;font-weight:600;min-height:50px}.textbtn{border:0;background:transparent;color:var(--ink);text-decoration:underline;padding:10px 4px;margin-left:12px}
+.hidden{display:none!important}.rule{background:#fffdf8;border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:22px 0;color:#5d584e;font-size:16px}.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:20px 0}.search{flex:1;min-width:220px;border:1px solid var(--line);background:#fffdf8;border-radius:12px;padding:13px 15px;min-height:50px;color:#34332f}.leveltabs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}.level{border:1px solid var(--line);border-radius:14px;padding:14px;text-align:left;background:#fffdf8;color:#34332f;min-height:88px}.level strong{display:block;color:var(--ink);font-size:19px}.level small{color:var(--muted)}.level.active{outline:2px solid #aebda9;background:#f4f7f1}
+.progressline{height:6px;background:#e6dfd2;border-radius:9px;overflow:hidden;margin:8px 0 20px}.progressline span{height:100%;display:block;background:#8da58e;width:0;transition:width .2s}
+.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:22px 0 10px}.sectionhead h2{font-family:'Cormorant Garamond',serif;color:var(--ink);font-size:34px;margin:0}.sectionhead p{margin:0;color:var(--muted);font-size:15px}
+.cards{display:grid;gap:12px}.topic{border:1px solid var(--line);border-radius:16px;background:var(--card);overflow:hidden;box-shadow:0 3px 12px rgba(55,45,29,.035)}.topic summary{list-style:none;cursor:pointer;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px;color:var(--ink);font-weight:700;font-size:20px}.topic summary::-webkit-details-marker{display:none}.topic summary:after{content:"＋";font-size:22px;color:var(--accent)}.topic[open] summary:after{content:"−"}.topicbody{padding:0 20px 18px}.topicbody ul{margin:0 0 14px;padding-left:24px}.topicbody li{padding:4px 0}.try{background:#f5f2e9;border-left:3px solid #b99a5c;padding:10px 14px;border-radius:0 9px 9px 0;margin:12px 0;font-size:16px}.cardfoot{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:12px;margin-top:14px}.learn{border:1px solid #9aaa94;color:#435d49;background:#f1f6ef;border-radius:10px;padding:9px 14px;font-weight:600}.learn.done{background:#dfeade}.verify{font-size:14px;color:var(--muted)}.verify a{color:var(--ink)}
+.note{font-size:14px;color:var(--muted);margin:24px 0 10px}.empty{padding:24px;text-align:center;color:var(--muted);background:#fffdf8;border-radius:14px}
+footer{border-top:1px solid var(--line);margin-top:34px;padding:18px 0;color:var(--muted);font-size:14px}
+@media(max-width:680px){.shell{padding:14px}.topbar{margin-bottom:12px}.cover{min-height:430px;padding:28px 22px}.leveltabs{grid-template-columns:repeat(2,1fr)}.level{min-height:76px}.topic summary{font-size:18px;padding:16px}.topicbody{padding:0 16px 16px}.sectionhead{display:block}.sectionhead p{margin-top:4px}.textbtn{margin-left:6px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* cover collage */
+.cv{--navy:#1f2a5c;--cream:#f6efe0;position:relative;border-radius:24px;padding:clamp(22px,4vw,44px) clamp(14px,3vw,36px) 26px;color:var(--navy);background:#cdb18c;box-shadow:var(--shadow);text-align:center;overflow:hidden}
+.cv:before{content:"";position:absolute;inset:0;pointer-events:none;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .3  0 0 0 0 .22  0 0 0 0 .12  0 0 0 .24 0'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>")}
+.cv>*{position:relative}
+.cv-eyebrow{font:700 13px/1 Hind,sans-serif;letter-spacing:.3em;color:#a8324a}
+.cv h1{margin:10px 0 4px;font:700 clamp(44px,9vw,84px)/1 'Cormorant Garamond','Tiro Devanagari Hindi',serif;color:var(--navy)}
+.cv-accts{margin:0;font:italic 500 clamp(19px,3vw,26px)/1.3 'Cormorant Garamond','Tiro Devanagari Hindi',serif;color:#4a3a28}
+.cv-band{height:34px;margin:18px 0 26px;border-radius:3px;background:url(assets/cover/carpet.jpg) center 60%/cover;box-shadow:0 0 0 3px var(--cream)}
+.cv-grid{position:relative;display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:clamp(110px,15vw,150px);gap:clamp(12px,2vw,18px);text-align:left}
+.cv-t{position:relative;margin:0;background:var(--cream);padding:7px;box-shadow:0 10px 22px rgba(40,25,10,.3);transform:rotate(var(--r,0deg));transition:transform .25s}
+.cv-t:hover{transform:rotate(0) scale(1.012)}
+.cv-t:before{content:"";position:absolute;top:-9px;left:50%;width:62px;height:18px;margin-left:-31px;background:rgba(200,150,42,.6);transform:rotate(-3deg);z-index:2}
+.cv-t img{width:100%;height:100%;object-fit:cover;display:block;background:#fff}
+.cv-t figcaption{position:absolute;left:-6px;bottom:14px;background:var(--cream);color:var(--navy);padding:5px 12px 6px;font:700 clamp(16px,2.2vw,21px)/1 'Cormorant Garamond','Tiro Devanagari Hindi',serif;box-shadow:0 3px 8px rgba(0,0,0,.25);border-left:4px solid #a8324a}
+.cv-s{position:absolute;z-index:5;background:var(--navy);color:var(--cream);padding:8px 14px 9px;border:2px dashed #e7cf95;border-radius:4px;box-shadow:0 8px 16px rgba(0,0,0,.35);text-align:center;transform:rotate(var(--r,0deg));line-height:1.2}
+.cv-s b{display:block;font:700 clamp(22px,3.4vw,32px)/1.05 'Cormorant Garamond','Tiro Devanagari Hindi',serif;color:#e7cf95}
+.cv-s span{display:block;font:500 clamp(14px,1.8vw,17px) Hind,sans-serif}
+.cv-s em{display:block;font:600 11px Hind,sans-serif;font-style:normal;letter-spacing:.1em;opacity:.8}
+.cv-a{grid-column:1/5;grid-row:1/3;--r:-.8deg}.cv-a img{object-position:70% 40%}
+.cv-b{grid-column:5/7;grid-row:1/4;--r:1.2deg}.cv-b img{object-fit:contain}
+.cv-d{grid-column:1/3;grid-row:3/5;--r:1deg}
+.cv-c{grid-column:3/5;grid-row:3/4;--r:-1.2deg}
+.cv-g{grid-column:3/4;grid-row:4/5;--r:1.6deg}.cv-g img{object-position:30% 50%}
+.cv-e{grid-column:4/5;grid-row:4/5;--r:-1.5deg}.cv-e img{object-position:50% 35%}
+.cv-f{grid-column:5/7;grid-row:4/5;--r:.8deg}.cv-f img{object-position:50% 68%}
+.cv-g figcaption,.cv-e figcaption{font-size:15px;padding:4px 8px 5px}
+
+.cv-tag{margin:30px 0 10px;font:italic 500 clamp(22px,3.4vw,30px)/1.3 'Cormorant Garamond','Tiro Devanagari Hindi',serif}
+.cv-facts{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 22px;font:600 15px Hind,sans-serif;letter-spacing:.04em;color:#4a3a28}
+.cv-facts span:before{content:"";display:inline-block;width:7px;height:7px;background:#c8962a;transform:rotate(45deg);margin-right:8px;vertical-align:middle}
+.cv-cta{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:14px;margin:22px 0 8px}
+.cv-go{border:0;background:var(--navy);color:var(--cream);border-radius:999px;padding:14px 34px;min-height:52px;font:700 22px 'Cormorant Garamond','Tiro Devanagari Hindi',serif;letter-spacing:.03em;box-shadow:0 8px 18px rgba(31,42,92,.35)}
+.cv-back{background:none;border:0;color:var(--navy);font:600 17px Hind,'Tiro Devanagari Hindi',sans-serif;text-decoration:underline;text-underline-offset:4px;min-height:44px;padding:0 6px}
+.cv-chk{margin:10px 0 0;font:400 13px/1.4 Hind,sans-serif;color:#4a3a28}
+.cv-go:focus-visible,.cv-back:focus-visible{outline:3px solid #c8962a;outline-offset:3px}
+.cv-a,.cv-b,.cv-c{z-index:3}.cv-c .cv-s{bottom:-20px;right:2px;padding:5px 9px 6px}.cv-c .cv-s b{font-size:clamp(17px,2.2vw,22px)}.cv-c .cv-s span{font-size:13px}.cv-c .cv-s em{font-size:10px}.cv-c figcaption{font-size:clamp(15px,1.9vw,19px);padding:4px 9px 5px}
+@media(max-width:680px){
+ .cv-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:124px}
+ .cv-a{grid-column:1/3;grid-row:1/3}.cv-b{grid-column:1/2;grid-row:3/5}.cv-d{grid-column:2/3;grid-row:3/5}
+ .cv-c{grid-column:1/3;grid-row:5/6}.cv-g{grid-column:1/2;grid-row:6/7}.cv-e{grid-column:2/3;grid-row:6/7}.cv-f{grid-column:1/3;grid-row:7/8}
+ 
+ .cv-b .cv-s{right:2px;top:46%}.cv-c .cv-s{bottom:-18px}
+}
+@media(prefers-reduced-motion:reduce){.cv-t{transition:none}}
+
+/* search */
+.search{min-height:48px}
+.chipsrow{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 4px}
+.chipsrow button,.resultinfo button{border:1px solid var(--line);background:#fffdf8;color:var(--ink);border-radius:999px;padding:6px 14px;min-height:38px;font-size:15px;font-weight:600}
+.resultinfo{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0;color:var(--ink);font-weight:600}
+.topic summary .stitle{text-align:left;flex:1}.topic summary .where{display:block;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
+mark{background:#f6df9a;color:inherit;border-radius:3px;padding:0 2px}
+.empty b{display:block;color:var(--ink);margin-bottom:8px}.empty .chipsrow{justify-content:center;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <div class="brand"><img class="mark" alt="" src="assets/cover/emblem.png" style="object-fit:cover;background:none"><span>ARTH SETU</span></div>
+    <button class="pill" id="langBtn" type="button">हिन्दी</button>
+  </header>
+
+  <main>
+    <section class="cv" id="cover">
+      <div class="cv-eyebrow" data-en="CATEGORY 5" data-hi="श्रेणी ५">CATEGORY 5</div>
+      <h1 data-en="Neutral content" data-hi="निष्पक्ष जानकारी">Neutral content</h1>
+      <p class="cv-accts" data-en="Savings · Salary · Jan Dhan · Current · FD · RD" data-hi="बचत · सैलरी · जन धन · चालू · FD · RD">Savings · Salary · Jan Dhan · Current · FD · RD</p>
+      <div class="cv-band" role="presentation"></div>
+      <div class="cv-grid">
+        <figure class="cv-t cv-a"><img alt="A woman counting saved notes beside two jars" src="assets/cover/jars.jpg"><figcaption data-en="Savings" data-hi="बचत">Savings</figcaption>
+          <div class="cv-s" style="right:10px;bottom:-14px;--r:-3deg"><b data-en="₹5 lakh" data-hi="₹5 लाख">₹5 lakh</b><span data-en="insured per bank" data-hi="प्रति बैंक बीमित">insured per bank</span><em>DICGC</em></div></figure>
+        <figure class="cv-t cv-b"><img alt="A hand holding three bank cards" src="assets/cover/cards.jpg"><figcaption data-en="Cards" data-hi="कार्ड">Cards</figcaption>
+          <div class="cv-s" style="right:6px;top:52%;--r:2.5deg"><b data-en="4 nominees" data-hi="4 नॉमिनी">4 nominees</b><span data-en="per account" data-hi="प्रति खाता">per account</span><em data-en="from Nov 2025" data-hi="नवंबर 2025 से">from Nov 2025</em></div></figure>
+        <figure class="cv-t cv-d"><img alt="A couple planning a budget with a piggy bank" src="assets/cover/couple.jpg"><figcaption data-en="Budget together" data-hi="साथ मिलकर बजट">Budget together</figcaption></figure>
+        <figure class="cv-t cv-c"><img alt="Elders talking outside a bank" src="assets/cover/seniors.jpg"><figcaption data-en="FD and RD" data-hi="FD और RD">FD and RD</figcaption><div class="cv-s" style="right:8px;bottom:-26px;--r:-2deg"><b data-en="₹0 to prepay" data-hi="चुकाने पर ₹0">₹0 to prepay</b><span data-en="floating loans" data-hi="फ़्लोटिंग लोन">floating loans</span><em data-en="RBI, from Jan 2026" data-hi="RBI, जनवरी 2026 से">RBI, from Jan 2026</em></div></figure>
+        <figure class="cv-t cv-g"><img alt="A hand holding a fan of cash notes" src="assets/cover/money.jpg"><figcaption data-en="Cash" data-hi="नक़द">Cash</figcaption></figure>
+        <figure class="cv-t cv-e"><img alt="A moneylender and his clerk with a ledger" src="assets/cover/sahukar.jpg"><figcaption data-en="Loans" data-hi="उधार">Loans</figcaption></figure>
+        <figure class="cv-t cv-f"><img alt="A boy paying at a tea stall in the rain" src="assets/cover/tea.jpg"><figcaption data-en="UPI" data-hi="UPI">UPI</figcaption></figure>
+      </div>
+      <p class="cv-tag" data-en="From “what is a bank?” to building a portfolio." data-hi="“बैंक क्या है?” से निवेश पोर्टफोलियो समझने तक।">From “what is a bank?” to building a portfolio.</p>
+      <div class="cv-facts"><span data-en="No brands" data-hi="कोई ब्रांड नहीं">No brands</span><span data-en="No affiliate links" data-hi="कोई एफिलिएट लिंक नहीं">No affiliate links</span><span data-en="Official sources only" data-hi="केवल आधिकारिक स्रोत">Official sources only</span></div>
+      <div class="cv-cta"><button class="cv-go" id="startBtn" data-en="Start learning" data-hi="सीखना शुरू करें">Start learning</button><button class="cv-back" id="backBtn" data-en="Back to categories" data-hi="श्रेणियों पर वापस जाएँ">Back to categories</button></div>
+      <p class="cv-chk" data-en="Figures on this cover last checked 24 Nov 2026 · DICGC, Ministry of Finance, RBI" data-hi="इस कवर के आँकड़ों की आख़िरी जाँच 24 नवंबर 2026 · DICGC, वित्त मंत्रालय, RBI">Figures on this cover last checked 24 Nov 2026 · DICGC, Ministry of Finance, RBI</p>
+    </section>
+
+    <section id="learning" class="hidden">
+      <div class="rule" data-en="Our rule: we explain types and features, never brands. Educational content, not investment, tax or legal advice. 🔄 marks figures that change often; check official sources before acting."
+      data-hi="हमारा नियम: हम प्रकार और सुविधाएँ समझाते हैं, ब्रांड नहीं। यह शैक्षिक जानकारी है, निवेश, कर या कानूनी सलाह नहीं। 🔄 बदलने वाले आँकड़े दर्शाता है; कोई कदम उठाने से पहले आधिकारिक स्रोत देखें।">Our rule: we explain types and features, never brands. Educational content, not investment, tax or legal advice. 🔄 marks figures that change often; check official sources before acting.</div>
+      <div class="toolbar">
+        <input class="search" id="search" type="search" placeholder="Search topics: UPI, FD, credit score…" aria-label="Search topics">
+        <button class="pill" id="expandBtn" data-en="Expand all" data-hi="सभी खोलें">Expand all</button>
+      </div>
+      <div class="chipsrow" id="sugg"></div>
+      <p class="resultinfo hidden" id="resultInfo" role="status" aria-live="polite"></p>
+      <nav class="leveltabs" id="tabs"></nav>
+      <div class="sectionhead"><div><h2 id="levelTitle">Start</h2><p id="levelDesc">Understand money and the banking system</p></div><div class="verify" id="progressText">0 of 3 learned</div></div>
+      <div class="progressline"><span id="progressBar"></span></div>
+      <div class="cards" id="cards"></div>
+      <p class="note" data-en="Content is a learning guide. Rules, rates and limits can change. Always confirm the current position with the linked regulator or government source."
+      data-hi="यह सामग्री सीखने के लिए है। नियम, दरें और सीमाएँ बदल सकती हैं। वर्तमान जानकारी संबंधित नियामक या सरकारी स्रोत से जाँचें।">Content is a learning guide. Rules, rates and limits can change. Always confirm the current position with the linked regulator or government source.</p>
+    </section>
+  </main>
+  <footer>Arth Setu · Neutral financial education · No brand endorsements</footer>
+</div>
+<script>
+const sources={
+ rbi:"https://www.rbi.org.in/",dicgc:"https://www.dicgc.org.in/",npc:"https://www.npci.org.in/",tax:"https://www.incometax.gov.in/",sebi:"https://www.sebi.gov.in/",irdai:"https://irdai.gov.in/",post:"https://www.indiapost.gov.in/",pfrda:"https://www.pfrda.org.in/",cyber:"https://cybercrime.gov.in/",cms:"https://cms.rbi.org.in/"
+};
+const L=[
+ {id:"start",en:"Start",hi:"शुरुआत",descEn:"Understand money and the banking system",descHi:"पैसे और बैंकिंग व्यवस्था को समझें",sections:[
+  {id:0,en:"Foundations",hi:"बुनियादी बातें",subEn:"Money, inflation, regulators and identity",subHi:"पैसा, महँगाई, नियामक और पहचान",topics:[
+   {en:"What money and inflation mean",hi:"पैसा और महँगाई का अर्थ",pointsEn:["Money helps people exchange goods and services.","A bank keeps deposits and provides payment services.","Inflation means prices rise over time; the same money buys less."],pointsHi:["पैसा वस्तुओं और सेवाओं के लेन-देन में मदद करता है।","बैंक जमा रखते हैं और भुगतान की सुविधाएँ देते हैं।","महँगाई में समय के साथ कीमतें बढ़ती हैं और पैसे की खरीद क्षमता घटती है।"],verify:["rbi"]},
+   {en:"Who regulates what",hi:"कौन किसे नियंत्रित करता है",pointsEn:["RBI regulates banks and many payment-system matters.","SEBI regulates securities markets and market intermediaries.","IRDAI oversees insurance; PFRDA oversees the pension sector."],pointsHi:["RBI बैंकों और कई भुगतान प्रणालियों को नियंत्रित करता है।","SEBI प्रतिभूति बाज़ार और उससे जुड़े मध्यस्थों को नियंत्रित करता है।","IRDAI बीमा और PFRDA पेंशन क्षेत्र की निगरानी करता है।"],verify:["rbi","sebi","irdai","pfrda"]},
+   {en:"KYC and financial identity",hi:"KYC और वित्तीय पहचान",pointsEn:["KYC means Know Your Customer; institutions verify customer identity.","Documents and accepted methods depend on the service and current rules.","Keep contact details updated and add a nominee where appropriate."],pointsHi:["KYC का अर्थ है ग्राहक की पहचान की जाँच।","कौन-से दस्तावेज़ मान्य होंगे, यह सेवा और मौजूदा नियमों पर निर्भर करता है।","संपर्क जानकारी अपडेट रखें और जहाँ उचित हो, नामांकित व्यक्ति जोड़ें।"],verify:["rbi"]}
+  ]},
+  {id:1,en:"The Banking System",hi:"बैंकिंग व्यवस्था",subEn:"Banks, institutions and deposit protection",subHi:"बैंक, वित्तीय संस्थाएँ और जमा सुरक्षा",topics:[
+   {en:"Types of banks and institutions",hi:"बैंकों और संस्थाओं के प्रकार",pointsEn:["The RBI is India's central bank; it is not a regular retail bank.","Commercial, cooperative, regional rural and small finance banks serve different needs.","An NBFC can provide finance, but it is not a bank."],pointsHi:["RBI भारत का केंद्रीय बैंक है; यह सामान्य खुदरा बैंक नहीं है।","वाणिज्यिक, सहकारी, क्षेत्रीय ग्रामीण और स्मॉल फाइनेंस बैंक अलग-अलग ज़रूरतें पूरी करते हैं।","NBFC वित्तीय सेवाएँ दे सकती है, लेकिन वह बैंक नहीं होती।"],verify:["rbi"]},
+   {en:"Deposit insurance",hi:"जमा बीमा",pointsEn:["DICGC deposit insurance applies to eligible deposits in insured banks.","The cover limit and aggregation rules must be checked on DICGC's official site.","Do not assume every financial institution or investment is covered."],pointsHi:["DICGC का जमा बीमा बीमित बैंकों की पात्र जमाओं पर लागू होता है।","बीमा सीमा और जमा जोड़ने के नियम DICGC की आधिकारिक वेबसाइट पर जाँचें।","हर वित्तीय संस्था या निवेश को बीमित न मानें।"],verify:["dicgc","rbi"],tryEn:"Example: Before splitting deposits, check how DICGC aggregates accounts held in the same bank.",tryHi:"उदाहरण: जमा बाँटने से पहले देखें कि एक ही बैंक के खातों को DICGC कैसे जोड़ता है।"}
+  ]},
+  {id:2,en:"Accounts and Deposits",hi:"खाते और जमा",subEn:"Where money sits and how deposits work",subHi:"पैसा कहाँ रखा जाता है और जमा कैसे काम करती है",topics:[
+   {en:"Types of bank accounts",hi:"बैंक खातों के प्रकार",pointsEn:["Savings accounts are commonly used for personal money and everyday banking.","Current accounts are designed for frequent business transactions.","Basic, salary, minor, joint and NRI accounts have different eligibility and features."],pointsHi:["बचत खाते निजी पैसे और रोज़मर्रा के बैंकिंग कामों में उपयोग होते हैं।","चालू खाते बार-बार होने वाले कारोबारी लेन-देन के लिए होते हैं।","बेसिक, वेतन, नाबालिग, संयुक्त और NRI खातों की शर्तें अलग होती हैं।"],verify:["rbi"]},
+   {en:"Fixed and recurring deposits",hi:"सावधि और आवर्ती जमा",pointsEn:["An FD places a lump sum for a chosen term; an RD accepts regular instalments.","Premature closure may affect interest or involve a penalty under disclosed terms.","Compare tenure, payout, premature-closure terms and tax treatment."],pointsHi:["FD में एकमुश्त रकम तय अवधि के लिए रखी जाती है; RD में नियमित किस्तें जमा होती हैं।","समय से पहले बंद करने पर ब्याज घट सकता है या शुल्क लग सकता है।","अवधि, भुगतान विकल्प, समयपूर्व बंद करने की शर्तें और कर देखें।"],verify:["rbi","tax"],tryEn:"Example: A monthly RD instalment is a habit-building plan; check the maturity amount in the deposit receipt.",tryHi:"उदाहरण: हर महीने RD की किस्त बचत की आदत बनाती है; रसीद में मैच्योरिटी राशि देखें।"},
+   {en:"Account hygiene",hi:"खाते की नियमित देखभाल",pointsEn:["Read statements and check charges regularly.","Keep your registered phone number and email current.","Ask your bank how to reactivate an inoperative account and update KYC."],pointsHi:["बैंक स्टेटमेंट पढ़ें और शुल्क नियमित रूप से जाँचें।","रजिस्टर्ड मोबाइल नंबर और ईमेल अपडेट रखें।","निष्क्रिय खाते को दोबारा चालू करने और KYC अपडेट करने की प्रक्रिया बैंक से पूछें।"],verify:["rbi"]}
+  ]}
+ ]},
+ {id:"build",en:"Build",hi:"मजबूत आधार",descEn:"Make payments, understand credit and save steadily",descHi:"भुगतान करें, उधार समझें और नियमित बचत करें",sections:[
+  {id:3,en:"Payments and Cards",hi:"भुगतान और कार्ड",subEn:"UPI, transfers, debit and credit cards",subHi:"UPI, पैसे भेजना, डेबिट और क्रेडिट कार्ड",topics:[
+   {en:"UPI and safe payments",hi:"UPI और सुरक्षित भुगतान",pointsEn:["UPI enables bank-account payments through supported apps and methods.","A UPI PIN authorises a payment; never share it with anyone.","Limits and features vary by transaction type and can change."],pointsHi:["UPI समर्थित ऐप और तरीकों से बैंक खाते द्वारा भुगतान की सुविधा देता है।","UPI PIN भुगतान की अनुमति देता है; इसे किसी से साझा न करें।","सीमाएँ और सुविधाएँ लेन-देन के प्रकार के अनुसार बदल सकती हैं।"],verify:["npc","rbi","cyber"],tryEn:"Before confirming, check the recipient name and amount shown on your screen.",tryHi:"भुगतान मंज़ूर करने से पहले स्क्रीन पर नाम और रकम जाँचें।"},
+   {en:"NEFT, RTGS, IMPS and auto-debit",hi:"NEFT, RTGS, IMPS और ऑटो-डेबिट",pointsEn:["NEFT, RTGS and IMPS are electronic bank-transfer systems with different operating rules.","Auto-debit mandates can be used for recurring bills or instalments.","Review active mandates and cancel those you no longer need."],pointsHi:["NEFT, RTGS और IMPS इलेक्ट्रॉनिक बैंक ट्रांसफर प्रणालियाँ हैं; इनके नियम अलग हैं।","ऑटो-डेबिट मैंडेट से नियमित बिल या किस्त कट सकती है।","सक्रिय मैंडेट जाँचें और जिनकी ज़रूरत नहीं, उन्हें रद्द करें।"],verify:["rbi","npc"]},
+   {en:"Debit, credit and prepaid cards",hi:"डेबिट, क्रेडिट और प्रीपेड कार्ड",pointsEn:["A debit card uses money available in your linked account.","A credit card lets you borrow up to a stated limit under its terms.","Paying only a minimum amount can leave a balance that attracts interest."],pointsHi:["डेबिट कार्ड आपके जुड़े खाते में उपलब्ध पैसे का उपयोग करता है।","क्रेडिट कार्ड तय सीमा और शर्तों के तहत उधार देता है।","केवल न्यूनतम रकम चुकाने पर बाकी बकाया पर ब्याज लग सकता है।"],verify:["rbi"]}
+  ]},
+  {id:4,en:"Credit and Borrowing",hi:"क्रेडिट और उधार",subEn:"Credit reports, loans and responsible borrowing",subHi:"क्रेडिट रिपोर्ट, लोन और जिम्मेदारी से उधार",topics:[
+   {en:"Credit score and report",hi:"क्रेडिट स्कोर और रिपोर्ट",pointsEn:["A credit report records borrowing and repayment information.","Credit bureaus prepare reports using information shared by lenders.","Check your report for unfamiliar accounts, errors and delayed-payment records."],pointsHi:["क्रेडिट रिपोर्ट में उधार और भुगतान का रिकॉर्ड होता है।","क्रेडिट ब्यूरो ऋणदाताओं से मिली जानकारी के आधार पर रिपोर्ट बनाते हैं।","अनजान खाते, गलतियाँ और देर से भुगतान के रिकॉर्ड जाँचें।"],verify:["rbi"]},
+   {en:"Loans and their cost",hi:"लोन और उसकी लागत",pointsEn:["Compare the interest rate, fees, repayment period and total amount payable.","A floating rate can change during the loan; understand how resets work.","Read the Key Facts Statement and ask for every charge in writing."],pointsHi:["ब्याज दर, शुल्क, चुकाने की अवधि और कुल देय रकम की तुलना करें।","फ्लोटिंग ब्याज दर लोन के दौरान बदल सकती है; बदलाव की प्रक्रिया समझें।","Key Facts Statement पढ़ें और हर शुल्क लिखित में लें।"],verify:["rbi"]},
+   {en:"Digital lending precautions",hi:"डिजिटल लोन में सावधानी",pointsEn:["Check the actual regulated lender behind a digital loan offer.","Read permissions, repayment terms, grievance details and total cost.","Do not give unnecessary access to contacts, photos or messages."],pointsHi:["डिजिटल लोन के पीछे वास्तविक विनियमित ऋणदाता की जाँच करें।","अनुमतियाँ, भुगतान शर्तें, शिकायत विवरण और कुल लागत पढ़ें।","कॉन्टैक्ट, फोटो या संदेशों की अनावश्यक अनुमति न दें।"],verify:["rbi","cyber"]}
+  ]},
+  {id:5,en:"Saving Strategy",hi:"बचत की रणनीति",subEn:"Budgeting, emergency savings and small-savings schemes",subHi:"बजट, आपातकालीन बचत और छोटी बचत योजनाएँ",topics:[
+   {en:"Budget and emergency fund",hi:"बजट और आपातकालीन निधि",pointsEn:["List income, essential costs, flexible spending and existing repayments.","Set aside savings regularly, even if the first amount is small.","Keep emergency money accessible and separate from daily spending."],pointsHi:["आय, ज़रूरी खर्च, बदलते खर्च और मौजूदा किस्तें लिखें।","नियमित बचत अलग रखें, शुरुआत छोटी रकम से भी हो सकती है।","आपातकालीन पैसा आसानी से मिलने योग्य और रोज़मर्रा के खर्च से अलग रखें।"],verify:["rbi"],tryEn:"Example: If monthly income is ₹30,000, write every fixed bill first; plan the remaining amount.",tryHi:"उदाहरण: यदि मासिक आय ₹30,000 है, तो पहले तय बिल लिखें; बाकी रकम का बजट बनाएँ।"},
+   {en:"Government-backed small savings",hi:"सरकार समर्थित छोटी बचत",pointsEn:["Small-savings schemes have different terms, access rules and tax treatment.","Rates and scheme conditions can be revised; confirm the current notification.","Read eligibility, lock-in, deposit limits and premature-closure rules before investing."],pointsHi:["छोटी बचत योजनाओं की अवधि, निकासी और कर नियम अलग-अलग होते हैं।","ब्याज दरें और शर्तें बदल सकती हैं; मौजूदा अधिसूचना देखें।","निवेश से पहले पात्रता, लॉक-इन, जमा सीमा और समयपूर्व निकासी के नियम पढ़ें।"],verify:["post","rbi","tax"]}
+  ]}
+ ]},
+ {id:"grow",en:"Grow",hi:"विकास",descEn:"Protect against shocks and understand investing",descHi:"जोखिम से सुरक्षा और निवेश को समझें",sections:[
+  {id:6,en:"Protection",hi:"सुरक्षा",subEn:"Insurance before taking investment risk",subHi:"निवेश जोखिम से पहले बीमा सुरक्षा",topics:[
+   {en:"Insurance basics",hi:"बीमा की बुनियादी बातें",pointsEn:["Insurance transfers specified financial risks under a contract.","Life, health, motor and property policies protect against different events.","Check exclusions, waiting periods, deductibles, claim steps and renewal terms."],pointsHi:["बीमा अनुबंध के अनुसार कुछ वित्तीय जोखिम दूसरी संस्था को सौंपता है।","जीवन, स्वास्थ्य, वाहन और संपत्ति बीमा अलग-अलग जोखिमों से सुरक्षा देते हैं।","अपवाद, प्रतीक्षा अवधि, डिडक्टिबल, क्लेम प्रक्रिया और नवीनीकरण शर्तें पढ़ें।"],verify:["irdai"]}
+  ]},
+  {id:7,en:"Investing",hi:"निवेश",subEn:"Risk, asset classes, funds and markets",subHi:"जोखिम, निवेश के प्रकार, फंड और बाज़ार",topics:[
+   {en:"Risk, return and time horizon",hi:"जोखिम, रिटर्न और समयावधि",pointsEn:["Higher expected return usually comes with higher uncertainty or risk.","Match an investment's risk with your goal and time horizon.","Past performance does not guarantee future results."],pointsHi:["अधिक संभावित रिटर्न के साथ अक्सर अधिक अनिश्चितता या जोखिम होता है।","निवेश का जोखिम अपने लक्ष्य और समयावधि के अनुसार चुनें।","पुराना प्रदर्शन भविष्य के नतीजों की गारंटी नहीं देता।"],verify:["sebi"]},
+   {en:"Asset classes",hi:"निवेश के प्रकार",pointsEn:["Equity represents ownership; debt represents lending or borrowing exposure.","Cash-like products focus on liquidity; real assets have different risks.","Diversification spreads exposure but cannot remove all investment risk."],pointsHi:["इक्विटी स्वामित्व दर्शाती है; डेट में उधार देने या लेने का जोखिम होता है।","नकदी जैसे साधन तरलता पर ध्यान देते हैं; वास्तविक संपत्तियों के जोखिम अलग होते हैं।","विविधीकरण जोखिम बाँटता है, लेकिन पूरा जोखिम समाप्त नहीं करता।"],verify:["sebi"]},
+   {en:"Mutual funds and SIPs",hi:"म्यूचुअल फंड और SIP",pointsEn:["A mutual fund pools money and invests according to its stated mandate.","A SIP is a method of investing periodically; it does not assure profit.","Read the scheme documents, riskometer, costs and portfolio disclosures."],pointsHi:["म्यूचुअल फंड कई निवेशकों का पैसा जोड़कर घोषित उद्देश्य के अनुसार निवेश करता है।","SIP नियमित अंतराल पर निवेश का तरीका है; मुनाफ़े की गारंटी नहीं।","स्कीम दस्तावेज़, रिस्कोमीटर, लागत और पोर्टफोलियो जानकारी पढ़ें।"],verify:["sebi"]},
+   {en:"Stock market and intermediaries",hi:"शेयर बाज़ार और मध्यस्थ",pointsEn:["A share represents a unit of ownership in a company.","Use only appropriately registered market intermediaries and verify their status.","Understand order types, charges, settlement and risk before trading."],pointsHi:["शेयर किसी कंपनी में हिस्सेदारी की एक इकाई दर्शाता है।","उचित रूप से पंजीकृत बाज़ार मध्यस्थों का ही उपयोग करें और पंजीकरण जाँचें।","ट्रेडिंग से पहले ऑर्डर, शुल्क, सेटलमेंट और जोखिम समझें।"],verify:["sebi"]}
+  ]},
+  {id:8,en:"Tax and Retirement",hi:"कर और रिटायरमेंट",subEn:"Tax basics and long-term planning",subHi:"कर की बुनियाद और लंबी अवधि की योजना",topics:[
+   {en:"Tax basics",hi:"कर की बुनियादी बातें",pointsEn:["Tax treatment depends on income type, applicable law and chosen tax regime.","Keep salary, interest, investment and deduction records organised.","Tax slabs, rebates and filing dates can change; check the current tax portal."],pointsHi:["कर का नियम आय के प्रकार, लागू कानून और चुनी गई कर व्यवस्था पर निर्भर करता है।","वेतन, ब्याज, निवेश और कटौती के रिकॉर्ड व्यवस्थित रखें।","कर स्लैब, रिबेट और रिटर्न की तारीखें बदल सकती हैं; मौजूदा पोर्टल देखें।"],verify:["tax"]},
+   {en:"Retirement planning",hi:"रिटायरमेंट योजना",pointsEn:["Estimate future needs, likely income sources and inflation effects.","Understand the features and withdrawal conditions of pension products.","Review nominees and keep retirement records accessible."],pointsHi:["भविष्य की ज़रूरतें, संभावित आय और महँगाई का असर समझें।","पेंशन उत्पादों की सुविधाएँ और निकासी की शर्तें जानें।","नामांकित व्यक्ति की जानकारी अपडेट रखें और रिकॉर्ड सुरक्षित रखें।"],verify:["pfrda","tax"]}
+  ]}
+ ]},
+ {id:"advanced",en:"Advanced",hi:"उन्नत समझ",descEn:"Bring plans together and protect your financial life",descHi:"योजनाओं को जोड़ें और वित्तीय जीवन सुरक्षित रखें",sections:[
+  {id:9,en:"Advanced Strategy",hi:"उन्नत रणनीति",subEn:"Portfolio, estate and the wider economy",subHi:"पोर्टफोलियो, संपत्ति योजना और अर्थव्यवस्था",topics:[
+   {en:"Portfolio construction",hi:"पोर्टफोलियो बनाना",pointsEn:["Start with goals, time horizon, liquidity needs and ability to bear losses.","Spread investments across suitable asset classes and review concentration.","Rebalance when your allocation moves away from your plan."],pointsHi:["लक्ष्य, समयावधि, नकदी की ज़रूरत और नुकसान सहने की क्षमता से शुरुआत करें।","उपयुक्त निवेश प्रकारों में पैसा बाँटें और एक जगह अधिक निवेश से बचें।","पोर्टफोलियो तय योजना से हटे तो संतुलन दोबारा बनाएँ।"],verify:["sebi"]},
+   {en:"Estate and nomination planning",hi:"संपत्ति और नामांकन योजना",pointsEn:["Keep a clear record of accounts, policies, investments and liabilities.","Nomination helps institutions identify a person to receive or claim assets under applicable rules.","A will and succession questions may need qualified legal advice."],pointsHi:["खातों, बीमा, निवेश और देनदारियों का स्पष्ट रिकॉर्ड रखें।","नामांकन से संस्था को लागू नियमों के अनुसार दावा करने वाले व्यक्ति की पहचान मिलती है।","वसीयत और उत्तराधिकार के लिए योग्य कानूनी सलाह की ज़रूरत हो सकती है।"],verify:["rbi","sebi"]},
+   {en:"Reading the macro picture",hi:"अर्थव्यवस्था की बड़ी तस्वीर",pointsEn:["Inflation, interest rates, employment and growth influence household finances.","Central-bank policy can affect borrowing costs and financial conditions.","Use official data and avoid making decisions from a single headline."],pointsHi:["महँगाई, ब्याज दरें, रोज़गार और विकास घरेलू वित्त को प्रभावित करते हैं।","केंद्रीय बैंक की नीति उधार की लागत और वित्तीय परिस्थितियों को प्रभावित कर सकती है।","आधिकारिक आँकड़े देखें और केवल एक खबर पर निर्णय न लें।"],verify:["rbi"]}
+  ]},
+  {id:10,en:"Safety Net",hi:"वित्तीय सुरक्षा जाल",subEn:"Fraud warning signs and complaint routes",subHi:"धोखाधड़ी के संकेत और शिकायत के रास्ते",topics:[
+   {en:"Fraud red flags",hi:"धोखाधड़ी के संकेत",pointsEn:["Be cautious of guaranteed returns, urgency and unsolicited investment tips.","Never share passwords, OTPs, PINs or remote-access permissions.","Verify the sender independently before opening links or transferring money."],pointsHi:["गारंटीड मुनाफ़े, जल्दबाज़ी और अनचाही निवेश सलाह से सावधान रहें।","पासवर्ड, OTP, PIN या रिमोट एक्सेस की अनुमति साझा न करें।","लिंक खोलने या पैसे भेजने से पहले भेजने वाले की स्वतंत्र रूप से जाँच करें।"],verify:["sebi","rbi","cyber"]},
+   {en:"Where to complain",hi:"शिकायत कहाँ करें",pointsEn:["First report a transaction problem to the relevant bank or regulated institution.","Use the regulator's official grievance route if the issue remains unresolved.","For cyber financial fraud, contact the national cybercrime reporting system promptly."],pointsHi:["लेन-देन की समस्या पहले संबंधित बैंक या विनियमित संस्था को बताएँ।","समस्या हल न हो तो नियामक के आधिकारिक शिकायत माध्यम का उपयोग करें।","साइबर वित्तीय धोखाधड़ी में तुरंत राष्ट्रीय साइबर अपराध शिकायत प्रणाली से संपर्क करें।"],verify:["rbi","cyber","sebi","irdai"]}
+  ]}
+ ]}
+];
+let lang="en", active=0;
+const learned=JSON.parse(localStorage.getItem("arthsetu-neutral-learned")||"{}");
+const $=s=>document.querySelector(s);
+function txt(o){return o[lang]||o.en}
+function allSections(){return L.flatMap(l=>l.sections)}
+function topicKey(s,t){return s.id+"-"+t.en.toLowerCase().replace(/[^a-z0-9]+/g,"-")}
+function renderTabs(){
+ $("#tabs").innerHTML=L.map((l,i)=>`<button class="level ${i===active?"active":""}" data-level="${i}"><strong>${txt(l)}</strong><small>${lang==="en"?l.sections.length+" sections":l.sections.length+" भाग"}</small></button>`).join("");
+ document.querySelectorAll("[data-level]").forEach(b=>b.onclick=()=>{active=+b.dataset.level;render()});
+}
+function esc(x){return String(x).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function rx(x){return x.replace(/[.*+?^${}()|[\]\\]/g,"\\$&")}
+function norm(x){return String(x).normalize("NFC").toLowerCase().replace(/[\u200c\u200d]/g,"").replace(/\u093c/g,"").replace(/\u0901/g,"\u0902")}
+const ALIAS=[["scam","scams","fraud","cheat","phishing","ठगी","धोखाधड़ी","फ्रॉड"],["emi","loan","loans","lending","lender","borrow","borrowing","लोन","ऋण","उधार"],["sip","mutual fund","mutual funds","म्यूचुअल"],["fd","fixed deposit","सावधि"],["rd","recurring deposit"],["tax","itr","tds","टैक्स","आयकर"],["insurance","bima","बीमा"],["pension","nps","retirement","पेंशन","सेवानिवृत्ति"],["kyc","aadhaar","identity","पहचान"],["upi","payment","payments","भुगतान"],["cibil","credit score","score","स्कोर"],["nominee","nomination","नॉमिनी","नामांकन"],["complaint","ombudsman","grievance","शिकायत"],["savings","saving","बचत"],["budget","बजट"],["inflation","महँगाई","महंगाई"]];
+const ALIASN=ALIAS.map(g=>g.map(norm));
+function variants(tok){const out=[tok];ALIASN.forEach(g=>{if(g.includes(tok))g.forEach(v=>{if(!out.includes(v))out.push(v)})});return out}
+function hit(hay,v,strict){return strict?new RegExp("(^|[^a-z0-9\\u0900-\\u097f])"+rx(v)).test(hay):hay.includes(v)}
+let INDEX=null,VOCAB=null;
+function lev(a,b){if(Math.abs(a.length-b.length)>2)return 9;const d=[];for(let i=0;i<=a.length;i++){d[i]=[i]}for(let j=1;j<=b.length;j++)d[0][j]=j;for(let i=1;i<=a.length;i++)for(let j=1;j<=b.length;j++)d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+(a[i-1]===b[j-1]?0:1));return d[a.length][b.length]}
+function near(tok){if(tok.length<4)return[];if(!VOCAB){const set=new Set();INDEX.forEach(e=>(e.title+" "+e.body).split(/[^a-z0-9\u0900-\u097f]+/).forEach(w=>{if(w.length>=4)set.add(w)}));VOCAB=[...set]}const lim=tok.length>=7?2:1;return VOCAB.filter(w=>lev(tok,w.slice(0,tok.length+1))<=lim||lev(tok,w)<=lim).slice(0,8)}
+function buildIndex(){INDEX=[];L.forEach(l=>l.sections.forEach(s=>s.topics.forEach(t=>{INDEX.push({l,s,t,title:norm(t.en+" "+t.hi),sec:norm(s.en+" "+s.hi+" "+l.en+" "+l.hi),body:norm([...t.pointsEn,...t.pointsHi,t.tryEn||"",t.tryHi||"" ].join(" "))})})))}
+function searchTopics(q){
+ if(!INDEX)buildIndex();
+ const tokens=norm(q).split(/\s+/).filter(Boolean);if(!tokens.length)return{results:[],loose:false};
+ for(const mode of tokens.length>1?["strict","loose","fuzzy","any"]:["strict","loose","fuzzy"]){const strict=mode==="strict"; const anyMode=mode==="any";
+  const res=[];
+  INDEX.forEach((e,i)=>{let score=0;
+   const ok=tokens[anyMode?"some":"every"](tok=>{let best=0;(mode==="fuzzy"||anyMode?variants(tok).concat(near(tok)):variants(tok)).forEach((v,k)=>{const w=k===0?1:.6;
+     if(hit(e.title,v,strict&&!anyMode))best=Math.max(best,10*w);else if(hit(e.sec,v,strict&&!anyMode))best=Math.max(best,5*w);else if(hit(e.body,v,strict&&!anyMode))best=Math.max(best,2*w)});
+    score+=best;return anyMode?true:best>0});if(anyMode&&score===0)return;
+   if(ok)res.push({e,score,i})});
+  if(res.length)return{results:res.sort((a,b)=>b.score-a.score||a.i-b.i).map(r=>r.e),loose:mode!=="strict"};
+ }
+ return{results:[],loose:false};
+}
+function mark(text,raw){const toks=raw.trim().split(/\s+/).filter(x=>x.length>0).map(rx);if(!toks.length)return esc(text);return esc(text).replace(new RegExp("("+toks.map(x=>x.replace(/&/g,"&amp;")).join("|")+")","gi"),"<mark>$1</mark>")}
+const SUGG={en:["UPI","FD","KYC","Credit score","Scam","Tax","Insurance","Nominee"],hi:["UPI","FD","KYC","क्रेडिट स्कोर","धोखाधड़ी","टैक्स","बीमा","नॉमिनी"]};
+function suggHtml(){return SUGG[lang].map(w=>`<button type="button" data-q="${esc(w)}">${esc(w)}</button>`).join("")}
+function topicCard(s,t,l,q){
+ const key=topicKey(s,t),done=!!learned[key],points=lang==="en"?t.pointsEn:t.pointsHi,tryText=lang==="en"?t.tryEn:t.tryHi;
+ const links=t.verify.map(k=>`<a href="${sources[k]}" target="_blank" rel="noopener">${k.toUpperCase()}</a>`).join(" · ");
+ const title=q?mark(txt(t),q):esc(txt(t)),where=l?`<span class="where">${esc(txt(l))} › ${esc(txt(s))}</span>`:`${esc(txt(s))} · `;
+ return `<details class="topic"><summary><span class="stitle">${where+title}</span></summary><div class="topicbody"><ul>${points.map(p=>`<li>${q?mark(p,q):p}</li>`).join("")}</ul>${tryText?`<div class="try"><b>${lang==="en"?"Try it":"उदाहरण"}:</b> ${tryText}</div>`:""}<div class="cardfoot"><button class="learn ${done?"done":""}" data-learn="${key}">${done?(lang==="en"?"✓ Learned":"✓ सीखा"):(lang==="en"?"Mark as learned":"सीख लिया चिह्नित करें")}</button><div class="verify">${lang==="en"?"Verify at":"यहाँ जाँचें"}: ${links}</div></div></div></details>`}
+function render(){
+ renderTabs();const level=L[active];$("#levelTitle").textContent=txt(level);$("#levelDesc").textContent=lang==="en"?level.descEn:level.descHi;
+ const raw=$("#search").value.trim(),searching=!!raw;
+ ["#tabs",".sectionhead",".progressline"].forEach(sel=>document.querySelector(sel).classList.toggle("hidden",searching));
+ $("#sugg").classList.toggle("hidden",searching);$("#sugg").innerHTML=suggHtml();
+ const info=$("#resultInfo");info.classList.toggle("hidden",!searching);
+ let html="";
+ if(searching){
+  const {results,loose}=searchTopics(raw),n=results.length,open=n>0&&n<=3;
+  info.innerHTML=(lang==="en"?`${n} topic${n===1?"":"s"} found for “${esc(raw)}” in all levels${loose&&n?" (close matches)":""}`:`“${esc(raw)}” के लिए सभी स्तरों में ${n} विषय मिले${loose&&n?" (मिलते-जुलते)":""}`)+` <button type="button" id="clearSearch">${lang==="en"?"Clear search":"खोज हटाएँ"}</button>`;
+  html=n?results.map(e=>topicCard(e.s,e.t,e.l,raw)).join("").replace(/<details class="topic">/g,m=>m):`<div class="empty"><b>${lang==="en"?"No matching topics.":"कोई विषय नहीं मिला।"}</b>${lang==="en"?"Check the spelling or try one of these:":"वर्तनी जाँचें या इनमें से कोई शब्द आज़माएँ:"}<div class="chipsrow">${suggHtml()}</div></div>`;
+ }else{
+  html=level.sections.flatMap(s=>s.topics.map(t=>topicCard(s,t,null,""))).join("");
+ }
+ $("#cards").innerHTML=html;
+ if(searching){const n=document.querySelectorAll("#cards .topic").length;if(n>0&&n<=3)document.querySelectorAll("#cards .topic").forEach(d=>d.open=true)}
+ const total=level.sections.reduce((n,s)=>n+s.topics.length,0),count=level.sections.reduce((n,s)=>n+s.topics.filter(t=>learned[topicKey(s,t)]).length,0);
+ $("#progressText").textContent=lang==="en"?`${count} of ${total} learned`:`${total} में से ${count} सीखे`;
+ $("#progressBar").style.width=(total?count/total*100:0)+"%";
+ document.querySelectorAll(".topic").forEach(d=>d.addEventListener("toggle",()=>{if(d.open&&window.matchMedia("(max-width: 680px)").matches){document.querySelectorAll(".topic").forEach(other=>{if(other!==d)other.open=false})}}));
+ document.querySelectorAll("[data-learn]").forEach(b=>b.onclick=()=>{learned[b.dataset.learn]=!learned[b.dataset.learn];localStorage.setItem("arthsetu-neutral-learned",JSON.stringify(learned));render()});
+ document.querySelectorAll("[data-q]").forEach(b=>b.onclick=()=>{$("#search").value=b.dataset.q;render();$("#search").focus()});
+ const cs=$("#clearSearch");if(cs)cs.onclick=()=>{$("#search").value="";render();$("#search").focus()};
+}
+function setLang(){document.documentElement.lang=lang;$("#langBtn").textContent=lang==="en"?"हिन्दी":"English";document.querySelectorAll("[data-en]").forEach(el=>el.textContent=el.dataset[lang]);$("#search").placeholder=lang==="en"?"Search topics: UPI, FD, credit score…":"विषय खोजें: UPI, FD, क्रेडिट स्कोर…";render()}
+$("#langBtn").onclick=()=>{lang=lang==="en"?"hi":"en";setLang()};
+$("#startBtn").onclick=()=>{$("#cover").classList.add("hidden");$("#learning").classList.remove("hidden");window.scrollTo({top:0,behavior:"smooth"})};
+$("#backBtn").onclick=()=>{if(window.parent!==window){window.parent.postMessage({type:"ARTHSETU_BACK_TO_CATEGORIES"},"*")}else{window.location.href="/#categories"}};
+let st;$("#search").addEventListener("input",()=>{clearTimeout(st);st=setTimeout(render,120)});$("#search").addEventListener("keydown",e=>{if(e.key==="Escape"){e.target.value="";render()}});
+$("#expandBtn").onclick=()=>{const ds=[...document.querySelectorAll(".topic")],open=ds.some(d=>!d.open);ds.forEach(d=>d.open=open);$("#expandBtn").textContent=lang==="en"?(open?"Collapse all":"Expand all"):(open?"सभी बंद करें":"सभी खोलें")};
+setLang();
+</script>
+</body></html>

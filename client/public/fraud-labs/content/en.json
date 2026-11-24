@@ -1,0 +1,246 @@
+{
+  "meta": {
+    "title": "Fraud Labs",
+    "subtitle": "Practise spotting a scam. Know what to do next.",
+    "home": "Fraud Labs",
+    "listen": "Listen to this screen",
+    "bigger": "Bigger text",
+    "listenMode": "Listen-first"
+  },
+  "home": {
+    "eyebrow": "ARTHSETU · FINANCIAL SAFETY",
+    "heading": "Pause before you pay.",
+    "body": "Try safe examples. Learn the warning signs. Know where to get help.",
+    "spot": "Spot the scam",
+    "map": "Fraud map",
+    "help": "I was cheated — help",
+    "ruleTitle": "ONE RULE TO REMEMBER",
+    "rule": "Nobody real will ask for your OTP, PIN or CVV. Never pay to receive money.",
+    "imageAlt": "Fraud Labs collage showing scam warnings, a worried family and money",
+    "terms": "OTP: one-time code · PIN: secret payment number · CVV: card security digits · UPI: phone-based bank payment."
+  },
+  "spot": {
+    "eyebrow": "PRACTISE · 11 FICTIONAL EXAMPLES",
+    "heading": "Would you trust this?",
+    "body": "Read the message or call. Then choose one answer.",
+    "real": "Real",
+    "scam": "Scam",
+    "next": "Next example",
+    "finish": "See the examples again",
+    "why": "Why it is unsafe",
+    "flag": "Warning sign",
+    "progress": "Example",
+    "listen": "Listen to this example",
+    "done": "You have seen all 11 examples.",
+    "again": "Practise again",
+    "back": "Back to Fraud Labs"
+  },
+  "map": {
+    "eyebrow": "SEE THE PATTERN",
+    "heading": "A simple fraud map",
+    "body": "The person, the reason and the trick can change. The warning signs often repeat.",
+    "who": "WHO · WHO IS CHEATING?",
+    "why": "WHY · WHAT DO THEY WANT?",
+    "how": "HOW · WHAT TRICK DO THEY USE?",
+    "back": "Back to Fraud Labs",
+    "items": [
+      {
+        "who": "A stranger pretending to help",
+        "why": "To get access to your money",
+        "how": "A fake support call"
+      },
+      {
+        "who": "A person pretending to be an officer",
+        "why": "To frighten you into obeying",
+        "how": "Threats and a fake video call"
+      },
+      {
+        "who": "A fake recruiter or lender",
+        "why": "To collect a fee or your details",
+        "how": "A job or loan offer"
+      },
+      {
+        "who": "A fake investor or prize agent",
+        "why": "To take a payment or more money",
+        "how": "Big promises and pressure"
+      }
+    ],
+    "checksTitle": "Three checks before you act",
+    "checks": [
+      {
+        "title": "Pause",
+        "text": "A real emergency does not need a secret payment."
+      },
+      {
+        "title": "Verify",
+        "text": "Call back using a number you already trust."
+      },
+      {
+        "title": "Protect",
+        "text": "Keep your OTP, PIN, CVV and screen to yourself."
+      }
+    ]
+  },
+  "help": {
+    "eyebrow": "IF MONEY HAS GONE",
+    "heading": "This can happen to anyone.",
+    "body": "Act quickly. You do not need to feel ashamed.",
+    "callLabel": "CALL THE CYBER FRAUD HELPLINE",
+    "callText": "Call 1930",
+    "step1": "Call 1930 as soon as possible. Keep the transaction details nearby.",
+    "step2": "Report at cybercrime.gov.in. Save the acknowledgement number and message.",
+    "step3": "Call your bank using its official app, card or website. Ask it to block exposed cards, UPI or account access.",
+    "step4": "Keep screenshots, messages, caller numbers, links, transaction IDs and bank complaint details. Do not delete them.",
+    "portal": "Open the government reporting portal",
+    "bank": "Read RBI customer-protection guidance",
+    "back": "Back to Fraud Labs",
+    "note": "Do not send more money to anyone promising to recover your money.",
+    "readyTitle": "Keep these details ready",
+    "readyText": "Time and amount · bank or UPI reference · caller number or link · screenshots · bank complaint number."
+  },
+  "frauds": [
+    {
+      "id": "upi",
+      "kind": "message",
+      "label": "UPI collect request",
+      "title": "A request to receive money",
+      "message": "A caller says: “I am sending you ₹2,000. Open the payment app and enter your UPI PIN to receive it.”",
+      "answer": "scam",
+      "why": "A UPI PIN approves a payment. You do not enter it to receive money.",
+      "flag": "PIN to receive money",
+      "tag": "UPI",
+      "goal": "To make you approve a payment to them.",
+      "nextStep": "Decline the request. Check your balance in the app yourself."
+    },
+    {
+      "id": "phishing",
+      "kind": "message",
+      "label": "Fake bank link",
+      "title": "Your account will stop today",
+      "message": "Message: “Your account will be blocked tonight. Open this link and update your details now.”",
+      "answer": "scam",
+      "why": "The message pushes you to open an unverified link and share details.",
+      "flag": "Urgency",
+      "tag": "Link",
+      "goal": "To steal your login or card details through a fake page.",
+      "nextStep": "Do not open the link. Open your bank app or type its known website address."
+    },
+    {
+      "id": "impersonation",
+      "kind": "call",
+      "label": "Family emergency",
+      "title": "A stranger says they are family",
+      "message": "Call: “I am your nephew. My phone is broken. Send money to this new number. Do not call anyone else.”",
+      "answer": "scam",
+      "why": "The caller creates panic and asks you to keep it secret. Call your family on a known number.",
+      "flag": "Secrecy",
+      "tag": "Impersonation",
+      "goal": "To make you send money before you can verify who called.",
+      "nextStep": "End the call. Contact your relative using a number you already know."
+    },
+    {
+      "id": "kyc",
+      "kind": "message",
+      "label": "Fake KYC update",
+      "title": "KYC warning",
+      "message": "Message: “Your KYC expires in one hour. Send your OTP and card photo to keep your account active.”",
+      "answer": "scam",
+      "why": "A genuine service will not ask for your OTP or card photo in chat.",
+      "flag": "Asks for OTP",
+      "tag": "KYC",
+      "goal": "To collect your OTP and card details.",
+      "nextStep": "Do not reply. Contact the bank through its official app or website."
+    },
+    {
+      "id": "digital-arrest",
+      "kind": "call",
+      "label": "Digital arrest threat",
+      "title": "A caller claims you are under arrest",
+      "message": "Call: “Police case against you. Stay on video. Do not tell your family. Pay a security deposit now.”",
+      "answer": "scam",
+      "why": "A caller cannot put you under digital arrest or demand money to end a case.",
+      "flag": "Threat + payment",
+      "tag": "Threat",
+      "goal": "To frighten you into sending money or sharing private details.",
+      "nextStep": "End the call. Speak to a trusted person and contact the police through official channels."
+    },
+    {
+      "id": "job",
+      "kind": "message",
+      "label": "Fake job fee",
+      "title": "Work from home offer",
+      "message": "Message: “Earn ₹8,000 every day. Pay ₹499 for your joining kit before the interview.”",
+      "answer": "scam",
+      "why": "The offer promises unusually high pay and asks for money before a real job.",
+      "flag": "Pay first",
+      "tag": "Job",
+      "goal": "To collect a fee without giving you a real job.",
+      "nextStep": "Do not pay to get an interview. Check the employer through its official website."
+    },
+    {
+      "id": "qr",
+      "kind": "message",
+      "label": "QR to receive money",
+      "title": "Scan to get your refund",
+      "message": "Message: “Scan this QR and enter your UPI PIN. Your refund will arrive instantly.”",
+      "answer": "scam",
+      "why": "Scanning a payment QR and entering your PIN can send money out.",
+      "flag": "PIN request",
+      "tag": "QR",
+      "goal": "To make you approve money going out of your account.",
+      "nextStep": "Do not scan it. Ask for a normal payment confirmation instead."
+    },
+    {
+      "id": "loan",
+      "kind": "message",
+      "label": "Instant loan app",
+      "title": "Loan approved",
+      "message": "Message: “Your loan is approved. Pay a release fee now. Install this app from the file we sent.”",
+      "answer": "scam",
+      "why": "An unknown app and an advance fee are warning signs. Check a lender before sharing details.",
+      "flag": "Pay first",
+      "tag": "Loan",
+      "goal": "To collect an advance fee or install an unsafe app.",
+      "nextStep": "Do not install the file. Check the lender and app through official sources."
+    },
+    {
+      "id": "lottery",
+      "kind": "message",
+      "label": "Prize or lottery",
+      "title": "You have won a prize",
+      "message": "Message: “You won ₹5 lakh. Pay ₹2,500 tax to this personal account to claim it today.”",
+      "answer": "scam",
+      "why": "A prize message asks for money before you receive anything.",
+      "flag": "Fee to claim",
+      "tag": "Prize",
+      "goal": "To collect a fee for a prize that may not exist.",
+      "nextStep": "Do not pay. Check whether you entered the contest through its official organiser."
+    },
+    {
+      "id": "care",
+      "kind": "call",
+      "label": "Fake customer care",
+      "title": "A stranger offers a refund",
+      "message": "Call: “I am customer care. Install this screen-sharing app and tell me the code so I can refund you.”",
+      "answer": "scam",
+      "why": "Screen sharing can expose private information and let a stranger control your phone.",
+      "flag": "Screen sharing",
+      "tag": "Support",
+      "goal": "To see your screen, read private details or control your phone.",
+      "nextStep": "Close the call. Find customer care in the official app or on your bank card."
+    },
+    {
+      "id": "investment",
+      "kind": "message",
+      "label": "Investment group",
+      "title": "Guaranteed daily returns",
+      "message": "Group message: “Put in ₹10,000. Get guaranteed 5% profit every day. Add two friends to unlock the next level.”",
+      "answer": "scam",
+      "why": "No real investment can promise guaranteed daily profit. Pressure to recruit others is another warning.",
+      "flag": "Guaranteed returns",
+      "tag": "Investment",
+      "goal": "To take your deposit and persuade you to bring in others.",
+      "nextStep": "Do not transfer money. Check the firm and product with the relevant regulator."
+    }
+  ]
+}

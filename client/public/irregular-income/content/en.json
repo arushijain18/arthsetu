@@ -1,0 +1,912 @@
+{
+  "meta": {
+    "language": "en",
+    "brand": "ARTHSETU",
+    "title": "Income that changes. A plan that stays.",
+    "subtitle": "A small money habit for daily, weekly and project earners.",
+    "voice": "Listen to this screen",
+    "bigText": "Bigger text",
+    "listenMode": "Listen-first",
+    "listenModeOn": "Listen-first is on",
+    "home": "Welcome"
+  },
+  "coreRule": {
+    "label": "THE ARTHSETU RULE",
+    "title": "Protect tomorrow before upgrading today.",
+    "body": "Do not plan life around your best earning period. First protect money needed to keep earning, then essential household costs, then a buffer, and only then increase lifestyle spending.",
+    "short": "Work first. Home next. Buffer after. Lifestyle last."
+  },
+  "welcome": {
+    "eyebrow": "A PRACTICAL MONEY ROUTINE",
+    "heading": "Your income may change. Your plan can stay steady.",
+    "body": "Some days are busy. Some weeks are quiet. Some invoices arrive late. This guide helps you decide what to do each time money comes in.",
+    "cta": "Begin my plan",
+    "journeyTitle": "One simple path",
+    "journey": [
+      {
+        "title": "TEACH",
+        "body": "Learn one idea through a familiar Indian work story."
+      },
+      {
+        "title": "PRACTICE",
+        "body": "Move sample rupees into clear boxes."
+      },
+      {
+        "title": "SELF-PLAN",
+        "body": "Write a plan you can repeat on your own."
+      }
+    ],
+    "trust": "No login. No bank details. Your plan stays on this device.",
+    "imageCaption": "The people who earn every day keep the country moving."
+  },
+  "tierPrompt": {
+    "eyebrow": "STEP 1 · CHOOSE YOUR RHYTHM",
+    "heading": "How does your money arrive?",
+    "body": "Choose the pattern that feels closest. You can change it later.",
+    "cards": [
+      {
+        "id": "daily",
+        "number": "01",
+        "title": "Daily / cash",
+        "hiTitle": "रोज़ / नकद",
+        "subtitle": "Money comes in day by day",
+        "audience": "Sweepers, vegetable sellers, labourers, auto drivers and other daily earners.",
+        "oneLine": "Protect today’s earning power for tomorrow.",
+        "image": "tier-daily.webp",
+        "color": "work"
+      },
+      {
+        "id": "weekly",
+        "number": "02",
+        "title": "Weekly / gig / shop",
+        "hiTitle": "हफ्ते / दुकान / गिग",
+        "subtitle": "Payouts or sales come through the week",
+        "audience": "Delivery partners, ride-hailing drivers, kirana shops and technicians.",
+        "oneLine": "Business first, steady home draw, then buffer.",
+        "image": "tier-weekly.webp",
+        "color": "home"
+      },
+      {
+        "id": "project",
+        "number": "03",
+        "title": "Invoice / project",
+        "hiTitle": "प्रोजेक्ट / बिल के बाद",
+        "subtitle": "Money arrives after work or milestones",
+        "audience": "Freelancers, designers, developers, consultants and independent makers.",
+        "oneLine": "Every payment needs a job before it is spent.",
+        "image": "tier-project.webp",
+        "color": "buffer"
+      }
+    ]
+  },
+  "floor": {
+    "eyebrow": "STEP 2 · FIND YOUR FLOOR NUMBER",
+    "heading": "What must be paid so life and work can continue?",
+    "body": "Add the minimum for one month. Essentials only. Leave out shopping, eating out and upgrades.",
+    "fields": [
+      {
+        "id": "housing",
+        "label": "Housing / rent",
+        "hint": "Rent or the minimum home cost"
+      },
+      {
+        "id": "ration",
+        "label": "Ration + utilities",
+        "hint": "Food, cooking fuel, water, electricity"
+      },
+      {
+        "id": "schoolHealth",
+        "label": "School + essential health",
+        "hint": "School basics, regular medicines, essential care"
+      },
+      {
+        "id": "workCost",
+        "label": "Work cost",
+        "hint": "Stock, petrol, tools, travel or platform costs"
+      }
+    ],
+    "total": "YOUR FLOOR NUMBER",
+    "lowMonth": "Money received in a weak month (rough estimate)",
+    "lowMonthHint": "Use a slow month, not your best month. Leave blank if unsure.",
+    "example": "Illustration only: if home basics are ₹12,000 and work needs ₹3,000, the Floor Number is ₹15,000 for the month.",
+    "back": "Back",
+    "next": "See my reality check",
+    "privacy": "Use rounded estimates. Do not enter account numbers, PINs, OTPs, PAN or Aadhaar."
+  },
+  "reality": {
+    "eyebrow": "STEP 3 · REALITY CHECK",
+    "heading": "A low month is information, not failure.",
+    "bodyAbove": "Your Floor Number is",
+    "incomeLabel": "Your weak-month income estimate is",
+    "belowTitle": "This month is below the floor.",
+    "belowBody": "First goal is not investing. Protect the ability to earn, reduce avoidable leakage, check which support schemes you may qualify for, and build even a tiny cushion when possible. Do not borrow just to keep a lifestyle promise.",
+    "nearTitle": "The floor may be covered, but keep the order.",
+    "nearBody": "Protect work money first. Cover essential household costs next. Then build a buffer for slow days and delayed payments. A better month does not make every month a better month.",
+    "unknownTitle": "Let us plan without guessing.",
+    "unknownBody": "You can continue without an income estimate. Use the Floor Number as your minimum monthly requirement and compare it with real income as it arrives.",
+    "rule": "This is not a judgement about how hard you work. It is a tool to make the next decision clearer.",
+    "continue": "Learn my tier"
+  },
+  "lesson": {
+    "eyebrow": "STEP 4 · TEACH",
+    "heading": "Learn one small habit at a time.",
+    "body": "Read the story, look at the example, then try the tiny action. Use the speaker button to hear the card.",
+    "story": "A familiar workday",
+    "idea": "One idea",
+    "example": "Rupee example · illustration only",
+    "action": "Try this tiny action",
+    "back": "Previous card",
+    "next": "Next card",
+    "finish": "Take the 3-question check",
+    "quizTitle": "A quick check — no marks, no shame",
+    "quizHint": "Choose what you would actually do. You will see why.",
+    "correct": "That is the safer next step.",
+    "tryAgain": "Not quite. Have another look at the idea.",
+    "continuePractice": "Go to practice",
+    "cardOf": "Card"
+  },
+  "practice": {
+    "eyebrow": "STEP 5 · PRACTICE",
+    "heading": "Move the money before you spend it.",
+    "body": "Enter an amount that came in. Choose a box, then drag a coin or tap it. You can also type an amount into each box. These are practice amounts, not rules.",
+    "moneyIn": "Money received today / this week / this payment",
+    "chooseBox": "Choose a box to fill",
+    "coinHint": "Drag a coin to a box, or select a box and tap a coin.",
+    "remaining": "Still to place",
+    "placed": "Placed in boxes",
+    "over": "The boxes add up to more than the money received. Reduce one amount.",
+    "under": "Some money is still unassigned. Decide what job it needs before spending it.",
+    "balanced": "You have placed the full amount. Check the order once more.",
+    "reset": "Reset practice",
+    "next": "Make my own plan",
+    "boxLabels": {
+      "work": "Work first",
+      "home": "Home fixed",
+      "today": "Today",
+      "business": "Business",
+      "personal": "Personal draw",
+      "buffer": "Buffer",
+      "tax": "Tax reserve"
+    },
+    "boxHints": {
+      "work": "Stock, fuel, tools, travel for tomorrow",
+      "home": "Rent, ration, fees and fixed bills",
+      "today": "Food and daily needs",
+      "business": "Shop/app costs, maintenance, tools",
+      "personal": "A steady household amount",
+      "buffer": "A reserve for a slow week or late payment",
+      "tax": "A reserve based on your tax estimate"
+    }
+  },
+  "plan": {
+    "eyebrow": "STEP 6 · SELF-PLAN",
+    "heading": "My plan, in my own words.",
+    "body": "This is a simple reminder, not a strict budget. Change it when your work or household costs change.",
+    "fields": [
+      {
+        "id": "pattern",
+        "label": "My income pattern",
+        "placeholder": "Daily / weekly / project / mixed"
+      },
+      {
+        "id": "floor",
+        "label": "My Floor Number (per month)",
+        "placeholder": "Enter amount in rupees"
+      },
+      {
+        "id": "work",
+        "label": "Money I must protect for work",
+        "placeholder": "Enter amount in rupees"
+      },
+      {
+        "id": "buffer",
+        "label": "My first buffer target",
+        "placeholder": "Start with 1 day, then 1 week, then 1 month"
+      }
+    ],
+    "sevenTitle": "My 7-day money practice",
+    "sevenBody": "Tick the four habits you will practise this week. Then tick each day you did your small money check. The badge is for repeating a habit, not for saving a big amount.",
+    "pledges": [
+      "Separate work money before household spending.",
+      "Write down my minimum essential household cost.",
+      "Save part of a good earning day or week for a weak one.",
+      "Do not treat peak income as permanent income."
+    ],
+    "days": [
+      "Day 1",
+      "Day 2",
+      "Day 3",
+      "Day 4",
+      "Day 5",
+      "Day 6",
+      "Day 7"
+    ],
+    "badge": "Seven-day habit keeper",
+    "progress": "days practised",
+    "print": "Print my one-page plan",
+    "save": "Save my plan on this device",
+    "saved": "Your plan is saved on this device. On a shared phone, another person who opens this app may see it.",
+    "clear": "Clear my saved plan",
+    "cleared": "Saved plan cleared from this browser.",
+    "privacy": "Do not write passwords, OTPs, PINs, bank account numbers, PAN or Aadhaar in this plan."
+  },
+  "questions": {
+    "eyebrow": "THE FIVE QUESTIONS",
+    "heading": "When money comes in, pause and ask these five questions — in this order.",
+    "body": "This order protects your ability to earn and your household before lifestyle spending.",
+    "items": [
+      {
+        "q": "Can I keep earning tomorrow?",
+        "hint": "Protect stock, fuel, transport, tools and work costs.",
+        "hiLabel": "क्या मैं कल भी कमा पाऊँगा?"
+      },
+      {
+        "q": "Are essential bills covered?",
+        "hint": "Rent, ration, utilities, school and essential health.",
+        "hiLabel": "क्या जरूरी घर के खर्च पूरे हैं?"
+      },
+      {
+        "q": "Is my buffer growing?",
+        "hint": "Save something for a weak day, week or delayed invoice.",
+        "hiLabel": "क्या धीमे समय के लिए बचत बढ़ रही है?"
+      },
+      {
+        "q": "Do I owe tax or business costs?",
+        "hint": "Keep the money needed for business and any tax due.",
+        "hiLabel": "क्या टैक्स या काम का खर्च बाकी है?"
+      },
+      {
+        "q": "Only now: can I spend or invest more?",
+        "hint": "Use only what remains after stability is protected.",
+        "hiLabel": "अब क्या मैं अतिरिक्त खर्च या निवेश कर सकता हूँ?"
+      }
+    ],
+    "close": "The order matters more than the exact split. Your split depends on income, household needs, debt, taxes, eligibility and local costs."
+  },
+  "extras": {
+    "eyebrow": "SMALL TOPICS · ABOUT FIVE MINUTES EACH",
+    "heading": "Useful lessons for real work and real life.",
+    "body": "Pick one topic. Learn it in a few minutes, then try one small action.",
+    "open": "Open lesson",
+    "modules": [
+      {
+        "id": "debt",
+        "title": "Good debt and costly debt",
+        "subtitle": "Know the full rupee cost before borrowing.",
+        "icon": "🪙",
+        "cards": [
+          {
+            "title": "Ask what the loan helps you do",
+            "story": "A loan may help when it protects urgent needs or supports work that can repay it.",
+            "idea": "A useful loan has a clear purpose and a repayment plan that still works in a weak month.",
+            "example": "Illustration only: a sewing machine repair helps a tailor keep earning. The instalment must still fit after work costs and essential home costs.",
+            "action": "Write the purpose and the source of repayment before signing."
+          },
+          {
+            "title": "Look at the total rupees to repay",
+            "story": "Do not compare only the amount received or the monthly payment.",
+            "idea": "Ask for the amount you receive, every fee, each due date and the total you must return.",
+            "example": "Borrow ₹1,000 and repay ₹1,300. The extra cost is ₹300. This is an example only.",
+            "action": "Ask the lender to write the full repayment amount on paper."
+          },
+          {
+            "title": "Pause before a costly app or lender",
+            "story": "Pressure, access to contacts/photos, threats and unclear lender details are warning signs.",
+            "idea": "Use a regulated lender and read the written terms. Do not hand over OTPs or phone access.",
+            "example": "A neighbour says “₹2,000 now, pay later” but will not show the lender name or full amount. Pause.",
+            "action": "Do not install an unknown loan app. Verify the lender first."
+          }
+        ],
+        "quiz": [
+          {
+            "question": "You receive ₹1,000 and must repay ₹1,300. How much extra is that?",
+            "options": [
+              "₹100",
+              "₹300",
+              "₹1,300"
+            ],
+            "answer": 1,
+            "explain": "The extra cost is ₹300. Always compare total rupees to repay."
+          },
+          {
+            "question": "A lender will not show the full repayment amount. What should you do?",
+            "options": [
+              "Take it quickly",
+              "Pause and ask for written terms",
+              "Share your OTP"
+            ],
+            "answer": 1,
+            "explain": "Written terms help you see the real cost and due dates."
+          },
+          {
+            "question": "A loan is safer when…",
+            "options": [
+              "There is a clear purpose and realistic repayment plan",
+              "The lender is rushing you",
+              "The app asks for contact access"
+            ],
+            "answer": 0,
+            "explain": "Purpose and repayment matter more than a tempting promise."
+          }
+        ]
+      },
+      {
+        "id": "buffer",
+        "title": "Build a buffer in small steps",
+        "subtitle": "One day. One week. One month.",
+        "icon": "🏺",
+        "cards": [
+          {
+            "title": "Start with one day",
+            "story": "A large target can feel impossible. Start with a small amount that protects one day.",
+            "idea": "The Floor Number is the minimum monthly home-and-work amount. Divide it roughly by 30 for one day.",
+            "example": "Illustration only: a ₹15,000 monthly Floor Number is about ₹500 per day. The daily figure is a planning shortcut, not a bill.",
+            "action": "Choose one safe place to keep a one-day cushion."
+          },
+          {
+            "title": "Grow it to one week",
+            "story": "Add a little during stronger days or weeks.",
+            "idea": "A one-week target can be estimated as one quarter of the monthly Floor Number.",
+            "example": "Illustration only: if the floor is ₹15,000, one week is roughly ₹3,750 using the simple one-quarter method.",
+            "action": "Write your one-week target and review it weekly."
+          },
+          {
+            "title": "Then work toward one month",
+            "story": "A full month gives more room when work stops or money arrives late.",
+            "idea": "Keep a buffer separate from daily spending and work cash. Choose a safe, accessible place that fits your situation.",
+            "example": "A designer waiting for an invoice may use the buffer for rent and food while the client payment is delayed.",
+            "action": "Do not put emergency money into something whose value can fall or cannot be accessed quickly."
+          }
+        ],
+        "quiz": [
+          {
+            "question": "What is a helpful first buffer target?",
+            "options": [
+              "One day of the Floor Number",
+              "A luxury purchase",
+              "A fixed percentage for everyone"
+            ],
+            "answer": 0,
+            "explain": "Start with one day, then build toward one week and one month."
+          },
+          {
+            "question": "When should you use the buffer?",
+            "options": [
+              "For planned lifestyle upgrades",
+              "For a real low-income period or delayed payment",
+              "To copy a friend’s investment"
+            ],
+            "answer": 1,
+            "explain": "A buffer protects essentials during a weak period."
+          },
+          {
+            "question": "Is one universal buffer amount right for everyone?",
+            "options": [
+              "Yes",
+              "No, it depends on costs and income pattern",
+              "Only for freelancers"
+            ],
+            "answer": 1,
+            "explain": "The amount depends on the household and work costs."
+          }
+        ]
+      },
+      {
+        "id": "digital",
+        "title": "Digital safety for everyday payments",
+        "subtitle": "UPI, OTPs and fake loan apps.",
+        "icon": "📱",
+        "cards": [
+          {
+            "title": "A PIN is for sending money",
+            "story": "You do not enter a UPI PIN just to receive money.",
+            "idea": "A collect request asks you to approve a payment. Read the screen carefully before entering a PIN.",
+            "example": "A buyer says “I sent a collect request; enter your PIN to receive ₹500.” Stop. A PIN can approve money leaving your account.",
+            "action": "Never share your UPI PIN or OTP. Do not enter the PIN to receive money."
+          },
+          {
+            "title": "Do not hand over your phone",
+            "story": "Fraudsters may ask you to install an app, share your screen or read out an OTP.",
+            "idea": "A bank or government worker should not need your PIN or OTP. Call your bank using the number on its official website or card.",
+            "example": "A caller says your account will close unless you install a screen-sharing app. End the call and contact your bank independently.",
+            "action": "Keep screen sharing and unknown app installs off during financial calls."
+          },
+          {
+            "title": "Act quickly after fraud",
+            "story": "Fast reporting may help banks and authorities trace or stop a transaction.",
+            "idea": "Call 1930 and report at cybercrime.gov.in. Also contact your bank immediately. Use official channels only.",
+            "example": "If ₹2,000 leaves your account unexpectedly, report it at once. Keep the transaction reference.",
+            "action": "Save 1930 in your phone and teach one trusted person how to report."
+          }
+        ],
+        "quiz": [
+          {
+            "question": "Do you enter a UPI PIN to receive money?",
+            "options": [
+              "Yes",
+              "No",
+              "Only if the caller says so"
+            ],
+            "answer": 1,
+            "explain": "A UPI PIN authorises a payment from your account."
+          },
+          {
+            "question": "Someone asks for your OTP to stop a bank account from closing. What do you do?",
+            "options": [
+              "Read it aloud",
+              "Send a screenshot",
+              "End the call and contact the bank yourself"
+            ],
+            "answer": 2,
+            "explain": "Never share OTPs. Contact the bank through a trusted official number."
+          },
+          {
+            "question": "What is the national cyber financial fraud helpline?",
+            "options": [
+              "1930",
+              "1000",
+              "1800-000"
+            ],
+            "answer": 0,
+            "explain": "Call 1930 quickly and report through the official cybercrime portal."
+          }
+        ]
+      },
+      {
+        "id": "cover",
+        "title": "Insurance and pension in plain words",
+        "subtitle": "Protect health, income and later years.",
+        "icon": "🛡️",
+        "cards": [
+          {
+            "title": "Health cover helps with hospital costs",
+            "story": "Health insurance or an eligible public health scheme may help pay covered hospital bills.",
+            "idea": "Read who is covered, hospitals, waiting periods, limits and what is not covered.",
+            "example": "A family discovers that a hospital is not in the cashless network. Checking the list before an emergency can help.",
+            "action": "Keep policy or scheme details and the claim contact somewhere safe."
+          },
+          {
+            "title": "Accident and life cover do different jobs",
+            "story": "Accident cover is for listed accident events. Life cover pays according to the policy if the insured person dies.",
+            "idea": "Check eligibility, exclusions, renewal date, nominee and claim steps. Do not assume every event is covered.",
+            "example": "A delivery partner wants to know whether a policy covers an accident while working. They must read the exact terms.",
+            "action": "Ask the insurer or bank to explain exclusions in simple words."
+          },
+          {
+            "title": "Pension needs regular care",
+            "story": "Some public pension schemes require contributions and have entry conditions.",
+            "idea": "Check age, income, existing EPF/ESIC/NPS membership, contribution amount and exit rules before joining.",
+            "example": "PM-SYM is a voluntary contributory scheme for eligible unorganised workers. The contribution depends on joining age and rules.",
+            "action": "Do not join a scheme until you know the monthly debit and whether you qualify."
+          }
+        ],
+        "quiz": [
+          {
+            "question": "What should you check before choosing health cover?",
+            "options": [
+              "Only the poster",
+              "Hospitals, exclusions, waiting period and limits",
+              "Only the premium colour"
+            ],
+            "answer": 1,
+            "explain": "The cover details matter when you make a claim."
+          },
+          {
+            "question": "Are accident cover and life cover the same?",
+            "options": [
+              "Yes",
+              "No, they cover different events",
+              "Only for shopkeepers"
+            ],
+            "answer": 1,
+            "explain": "Read the exact event covered by each policy."
+          },
+          {
+            "question": "A contributory pension scheme means…",
+            "options": [
+              "You may need to pay regularly under its rules",
+              "It is always free",
+              "You can stop without checking exit rules"
+            ],
+            "answer": 0,
+            "explain": "Understand the amount and conditions before you enrol."
+          }
+        ]
+      },
+      {
+        "id": "tax",
+        "title": "Tax basics for project earners",
+        "subtitle": "Keep records before payment day.",
+        "icon": "🧾",
+        "cards": [
+          {
+            "title": "Keep a simple work record",
+            "story": "Write down each invoice, date sent, payment date and amount received.",
+            "idea": "Record business costs and any tax already deducted. Keep invoices and receipts together.",
+            "example": "You send an invoice for ₹40,000 in August but receive it in October. Record both dates.",
+            "action": "Use a notebook or simple spreadsheet; keep a copy of each invoice."
+          },
+          {
+            "title": "Tax is based on the full picture",
+            "story": "Tax depends on the type of income, expenses, deductions and current law. There is no safe universal tax percentage for every freelancer.",
+            "idea": "Estimate annual tax with a qualified tax professional or official tax tools. Check whether advance tax applies.",
+            "example": "A designer receives ₹50,000 but also has work costs and other income. The amount to keep for tax needs a proper calculation, not a guess.",
+            "action": "Keep a tax reserve only after checking your likely tax with a professional."
+          },
+          {
+            "title": "Know when advance tax may apply",
+            "story": "The Income Tax Department explains that advance tax can apply when the estimated tax payable after relevant credits reaches the official threshold.",
+            "idea": "For current tax year rules, use incometax.gov.in or ask a qualified tax professional. The rules changed with the Income-tax Act, 2025.",
+            "example": "A freelancer has irregular invoices but tax dates still arrive on the calendar. Planning for dates avoids a surprise.",
+            "action": "Mark official tax dates only after checking the current year guidance."
+          }
+        ],
+        "quiz": [
+          {
+            "question": "What should you record for each invoice?",
+            "options": [
+              "Only the client name",
+              "Invoice date, amount, payment date and related costs",
+              "Only the largest invoice"
+            ],
+            "answer": 1,
+            "explain": "Records make it easier to estimate cash flow and tax."
+          },
+          {
+            "question": "Is one tax percentage correct for all freelancers?",
+            "options": [
+              "Yes",
+              "No",
+              "Only in a good month"
+            ],
+            "answer": 1,
+            "explain": "Tax depends on the full income picture and current rules."
+          },
+          {
+            "question": "Where should you check current tax rules?",
+            "options": [
+              "A forwarded message",
+              "A random social post",
+              "The official Income Tax Department portal or a qualified professional"
+            ],
+            "answer": 2,
+            "explain": "Use official and professional sources for tax decisions."
+          }
+        ]
+      },
+      {
+        "id": "peak",
+        "title": "Why a peak season is not permanent income",
+        "subtitle": "Keep your life steady when sales jump.",
+        "icon": "🌦️",
+        "cards": [
+          {
+            "title": "Compare a strong period with a weak one",
+            "story": "A busy festival week or a large client payment may not repeat next month.",
+            "idea": "Plan using a weak or normal period, not the highest amount you remember.",
+            "example": "Ramesh earns ₹600 on a good day and ₹200 on a bad day. The ₹600 day should not set a new daily lifestyle.",
+            "action": "Write one good-day amount and one weak-day amount."
+          },
+          {
+            "title": "Keep the extra for the lean period",
+            "story": "After work costs and essential home costs are protected, a strong period can help build the buffer.",
+            "idea": "Do not treat every rupee left after a good day as free-to-spend money.",
+            "example": "A shop has a festival week with more sales. The owner first replaces stock, covers home needs and keeps money for the quiet weeks.",
+            "action": "Before a large purchase, check whether the slow-period buffer is on track."
+          },
+          {
+            "title": "Delay upgrades until your base is steady",
+            "story": "A bigger phone, vehicle or rent commitment can continue after the peak season ends.",
+            "idea": "Test a new recurring cost against a weak month and its repayment or maintenance needs.",
+            "example": "A driver has a strong week and considers a higher vehicle EMI. They first test whether a slow week can still cover it.",
+            "action": "Wait, calculate the weak-month cost, then decide."
+          }
+        ],
+        "quiz": [
+          {
+            "question": "Ramesh earns ₹600 on a good day and ₹200 on a bad day. Which amount should guide fixed spending?",
+            "options": [
+              "Only ₹600",
+              "A cautious amount that can survive weaker days",
+              "The highest day ever"
+            ],
+            "answer": 1,
+            "explain": "A high day is not permanent. Build the plan around a realistic low period."
+          },
+          {
+            "question": "What should happen to extra peak-season money?",
+            "options": [
+              "Spend all of it",
+              "Protect work, home essentials and buffer first",
+              "Promise new EMIs immediately"
+            ],
+            "answer": 1,
+            "explain": "The order keeps work and home stable through lean periods."
+          },
+          {
+            "question": "Before taking on a monthly EMI, test it against…",
+            "options": [
+              "A festival week",
+              "A strong invoice",
+              "A weak month"
+            ],
+            "answer": 2,
+            "explain": "Recurring costs continue even when income falls."
+          }
+        ]
+      }
+    ]
+  },
+  "safety": {
+    "eyebrow": "CHECK SUPPORT THAT MAY APPLY",
+    "heading": "Government support: check eligibility before you count on it.",
+    "body": "These schemes do not automatically apply to everyone. Use official sites or a local government help centre to check your own eligibility and the latest rules.",
+    "verified": "Last checked: 24 November 2026",
+    "warning": "Registration is not the same as receiving cash or a benefit. Some schemes are insurance, pension contributions, loans or work entitlements. Read the terms before signing or paying.",
+    "cards": []
+  },
+  "facilitator": {
+    "eyebrow": "COMMUNITY GROUP MODE",
+    "heading": "A 30-minute session that respects everyone’s work.",
+    "body": "Use sample stories and blank sheets. Do not ask anyone to announce income, debt, Aadhaar, account details or personal hardship. People may pass on any question.",
+    "schedule": [
+      {
+        "time": "0–4 min",
+        "title": "Welcome without judgement",
+        "body": "Say: “Income changes for many kinds of work. Today we will learn a simple order, not compare earnings.” Ask people to name different kinds of work, not their own income."
+      },
+      {
+        "time": "4–9 min",
+        "title": "Tell one local work story",
+        "body": "Use Ramesh: ₹600 on a good day, ₹200 on a weak day. Ask: “What must he keep so he can work tomorrow?” Introduce the Work → Home → Buffer → Lifestyle order."
+      },
+      {
+        "time": "9–15 min",
+        "title": "Find a Floor Number",
+        "body": "Give a blank card with housing, ration/utilities, school/essential health and work costs. Let people use imaginary numbers or keep their sheet private."
+      },
+      {
+        "time": "15–22 min",
+        "title": "Move sample rupees",
+        "body": "Use paper tokens. Ask the group to place work costs first, then essential home costs, then buffer, then any extra. Discuss why a strong day is not the same as a stable month."
+      },
+      {
+        "time": "22–27 min",
+        "title": "Practise the five questions",
+        "body": "Read each question slowly. Ask participants to point to the icon or repeat the order. Do not pressure anyone to share their own plan."
+      },
+      {
+        "time": "27–30 min",
+        "title": "One private next step",
+        "body": "Everyone chooses one habit for the next seven days. Share official support links and explain how to verify eligibility. Thank people for their time."
+      }
+    ],
+    "discussion": [
+      "What work cost must be protected before tomorrow?",
+      "Which household costs cannot be delayed?",
+      "What changes between a busy week and a slow week?",
+      "Where could a one-day buffer be kept safely?",
+      "Which official help source could we check together?"
+    ],
+    "care": "Facilitator note: never collect or photograph completed plans. Do not promise loan approval, cash benefits or scheme eligibility."
+  },
+  "footer": {
+    "disclaimer": "Financial education only. This is not personalised investment, tax, insurance or legal advice. Amounts are examples, not instructions. Check current rules with the official source before acting.",
+    "privacy": "Your plan is stored only in this browser on this device. Shared phones are not private."
+  },
+  "tierLessons": {
+    "daily": {
+      "cards": [
+        {
+          "title": "Keep tomorrow’s work alive",
+          "story": "Ramesh sells vegetables. Before he thinks about home spending, he must buy fresh stock and keep money for transport.",
+          "idea": "Money needed to earn again is not free-to-spend money. Put stock, petrol, tools and travel first.",
+          "example": "Illustration only: Ramesh earns ₹600 on a good day and ₹200 on a weak day. The amount for tomorrow’s stock must be protected before he spends.",
+          "action": "Name the one cost that lets you work tomorrow."
+        },
+        {
+          "title": "Make three physical boxes",
+          "story": "Ramesh keeps three envelopes at home: Work First, Home Fixed and Today.",
+          "idea": "Use three boxes or envelopes. Label them clearly. Put work money in the first, a daily share for fixed home costs in the second, and daily needs in the third.",
+          "example": "Illustration only: the labels matter more than a fixed split. Ramesh decides the amounts after checking stock cost and the home floor.",
+          "action": "Make three paper labels today."
+        },
+        {
+          "title": "Fix the home amount carefully",
+          "story": "Rent, ration and school costs come every month, even when sales change.",
+          "idea": "Estimate the minimum monthly home cost. Divide it into a daily amount only as a planning aid. If income is too low, do not pretend the full amount is available.",
+          "example": "Illustration only: a ₹6,000 fixed home amount across 30 days is about ₹200 a day. Some days may not be able to contribute this much.",
+          "action": "Write the monthly home amount and review it after one week."
+        },
+        {
+          "title": "Today’s money is for today’s needs",
+          "story": "After work money and the fixed home share, Ramesh can see what is left for food and daily needs.",
+          "idea": "Use the Today box for current food and daily needs. If there is not enough, check priorities and support options; do not hide the gap with a costly loan.",
+          "example": "Illustration only: if ₹100 remains, it is ₹100—not ₹300. Do not spend money that has another job.",
+          "action": "At day end, count what is left before spending it."
+        },
+        {
+          "title": "Close the day with one note",
+          "story": "A small note helps Ramesh see whether the same amount is enough every day.",
+          "idea": "Write money received, work money kept, home amount and what remained. This is a learning record, not a complicated budget.",
+          "example": "Illustration only: “Sales ₹600; stock and travel ₹220; home envelope ₹150; left ₹230.” Actual amounts change by day.",
+          "action": "Make one four-line note at the end of work."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What goes into the first box?",
+          "options": [
+            "Work money for tomorrow",
+            "Festival shopping",
+            "A new phone"
+          ],
+          "answer": 0,
+          "explain": "Work money keeps earning possible tomorrow."
+        },
+        {
+          "question": "What is the purpose of Home Fixed?",
+          "options": [
+            "A random treat",
+            "A daily share for rent, ration and fees",
+            "Only business stock"
+          ],
+          "answer": 1,
+          "explain": "It helps prepare for costs that come every month."
+        },
+        {
+          "question": "If today’s income is low, what should you do first?",
+          "options": [
+            "Pretend it was a good day",
+            "Protect essential work costs and review urgent needs",
+            "Spend the same as yesterday"
+          ],
+          "answer": 1,
+          "explain": "A weak day needs a calm reality check, not a forced spending target."
+        }
+      ]
+    },
+    "weekly": {
+      "cards": [
+        {
+          "title": "Sales are not your real earning",
+          "story": "A kirana shop receives money from sales, but some of it must buy stock and pay electricity, delivery and repairs.",
+          "idea": "First remove the costs of keeping the business open. The remaining amount is closer to the money available for home and buffer.",
+          "example": "Illustration only: a peak week has ₹12,000 sales and ₹4,500 work costs. ₹7,500 remains before household draw and buffer.",
+          "action": "Write sales and work costs as two separate lines."
+        },
+        {
+          "title": "Compare a peak week and a slow week",
+          "story": "A delivery partner may receive higher app payouts during a busy week and much less in a quiet week.",
+          "idea": "Compare at least one strong week and one slow week. Subtract fuel, maintenance, platform fees and other work costs in both.",
+          "example": "Illustration only: slow-week payouts ₹7,000 minus ₹3,800 costs leaves ₹3,200. Do not treat the peak amount as a permanent salary.",
+          "action": "Keep one note for a strong week and one for a slow week."
+        },
+        {
+          "title": "Give the household a steady weekly draw",
+          "story": "The shop or app account should not become the family’s daily spending wallet.",
+          "idea": "Choose a fixed weekly household amount that can still work in a weak period. Transfer it from business money after essential business costs.",
+          "example": "Illustration only: a shop owner chooses a small weekly draw after checking slow-week earnings. The amount is personal to that shop, not a rule for all shops.",
+          "action": "Choose a review day for the weekly household transfer."
+        },
+        {
+          "title": "Keep the buffer for the quiet season",
+          "story": "Festival weeks, rain, repairs or low demand can reduce sales.",
+          "idea": "After business costs and the planned home draw, keep part of stronger weeks for the next slow week.",
+          "example": "Illustration only: if a peak week leaves more after costs than the household draw, the extra can help cover a weaker week.",
+          "action": "Name one season when your work usually slows."
+        },
+        {
+          "title": "Separate business and personal money",
+          "story": "When QR payouts, app income and household payments mix together, it is hard to know what the business really earned.",
+          "idea": "Use separate accounts, envelopes or a notebook column for business and personal money. Reconcile sales and costs regularly.",
+          "example": "Illustration only: ₹2,000 in QR sales is not ₹2,000 free to spend if stock still needs to be replaced.",
+          "action": "At closing, write total sales, work costs and personal draw."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "A shop has ₹12,000 sales and ₹4,500 costs. What remains before the home draw and buffer?",
+          "options": [
+            "₹4,500",
+            "₹7,500",
+            "₹12,000"
+          ],
+          "answer": 1,
+          "explain": "₹12,000 − ₹4,500 = ₹7,500. It is not all personal spending money."
+        },
+        {
+          "question": "Why compare a strong week with a slow week?",
+          "options": [
+            "To plan a steady draw",
+            "To prove the business is always growing",
+            "To borrow more"
+          ],
+          "answer": 0,
+          "explain": "A slow-week check makes the household amount more realistic."
+        },
+        {
+          "question": "Where should extra money from a strong week go first?",
+          "options": [
+            "New lifestyle EMI",
+            "A slow-season buffer after work costs and home draw",
+            "Untracked cash spending"
+          ],
+          "answer": 1,
+          "explain": "Peak income can help carry the business and household through quiet weeks."
+        }
+      ]
+    },
+    "project": {
+      "cards": [
+        {
+          "title": "Work done is not payment received",
+          "story": "A designer finishes a project in July, but the client pays in September. Rent and software costs continue before the money arrives.",
+          "idea": "Treat delayed invoices as normal. Keep a list of work delivered, invoice sent, due date and actual payment date.",
+          "example": "Illustration only: an invoice for ₹40,000 is sent today but arrives after 45 days. It cannot pay today’s rent until it arrives.",
+          "action": "Write the next invoice due date and follow-up date."
+        },
+        {
+          "title": "Give every payment four jobs",
+          "story": "When a client pays, the money needs to cover tax, business operations, personal draw and a buffer.",
+          "idea": "Split the payment into four labelled places. Work out tax with a qualified professional; do not copy a percentage from someone else.",
+          "example": "Illustration only: a ₹50,000 payment might have ₹8,000 business costs, a ₹7,000 tax placeholder based on an individual estimate, ₹20,000 personal draw and ₹15,000 buffer. These figures are not a recommendation.",
+          "action": "Make four labels: Tax, Business, Personal, Buffer."
+        },
+        {
+          "title": "Keep a tax and records folder",
+          "story": "Invoices, business receipts, bank credits and tax deducted at source can matter when working out tax.",
+          "idea": "Keep dated records of invoices, expenses, payments and tax documents. Check current rules on the Income Tax Department portal.",
+          "example": "Illustration only: a ₹5,000 software receipt is a record of a work cost. Whether and how it counts for tax depends on the rules and your facts.",
+          "action": "Put this month’s invoices and receipts in one folder."
+        },
+        {
+          "title": "Pay yourself from a steady base",
+          "story": "A large project payment can feel like a high salary, but another project may take weeks to arrive.",
+          "idea": "Choose a personal draw based on a realistic low period, after tax and business needs. Do not make a new monthly commitment from one large invoice.",
+          "example": "Illustration only: a freelancer receives ₹80,000 for one project. That does not mean ₹80,000 will arrive every month.",
+          "action": "Write your base personal draw and the date you review it."
+        },
+        {
+          "title": "Invest only after stability is protected",
+          "story": "Tax, work costs, home essentials and buffer all have a job before surplus becomes available.",
+          "idea": "Use only genuine surplus after known obligations and a suitable buffer. Take tax and investment advice from qualified professionals.",
+          "example": "Illustration only: if ₹10,000 remains after all required amounts, the person can review it as surplus. The right next step depends on their situation.",
+          "action": "Ask: “Is this money truly extra, or does it already have a job?”"
+        }
+      ],
+      "quiz": [
+        {
+          "question": "A project is finished but the invoice is unpaid. What should your plan show?",
+          "options": [
+            "Only the project finish date",
+            "Invoice date, due date and actual receipt date",
+            "The money as already received"
+          ],
+          "answer": 1,
+          "explain": "Work completed and cash received are different dates."
+        },
+        {
+          "question": "What are the four jobs for a project payment?",
+          "options": [
+            "Tax, business, personal draw, buffer",
+            "Shopping, gifts, travel, phone",
+            "Only personal spending"
+          ],
+          "answer": 0,
+          "explain": "The four labels help keep obligations visible."
+        },
+        {
+          "question": "Should you copy a tax percentage from another freelancer?",
+          "options": [
+            "Yes",
+            "No, estimate using your own facts and current rules",
+            "Only in a strong month"
+          ],
+          "answer": 1,
+          "explain": "Tax depends on your own income and rules. Ask a qualified professional."
+        }
+      ]
+    }
+  }
+}

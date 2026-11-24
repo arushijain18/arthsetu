@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#243654"/>
+  <path d="M72 224Q256 30 440 224V432H72Z" fill="#f3e8d4" stroke="#d8b77d" stroke-width="12"/>
+  <path d="M116 244Q256 94 396 244V390H116Z" fill="#602f35" stroke="#d8b77d" stroke-width="8"/>
+  <text x="256" y="330" font-family="serif" font-size="178" text-anchor="middle" fill="#f5d9a8">अ</text>
+</svg>

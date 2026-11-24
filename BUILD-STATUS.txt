@@ -1,0 +1,1 @@
+Fraud Labs source and static assets integrated into the main ArthSetu client. Category #6 routes to the embedded module. ZIP integrity checked. A fresh Vite production build was not run in this environment; run cd client && npm install && npm run build to regenerate/verify dist.
